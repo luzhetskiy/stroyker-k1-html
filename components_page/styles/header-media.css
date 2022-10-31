@@ -1,0 +1,93 @@
+
+@media only screen and (max-width: 1280px) {
+
+    .general--width {
+        max-width: 260px;
+    }
+    
+    .__header .custom-block{
+       padding-left: 0;
+    }
+
+    .__header .catalog-btn{
+        padding: 5px 18px 5px 35px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .__header .catalog-btn span{
+        left: 10px;
+    }
+
+    .__header .options-box {
+        width: 182px;
+    }
+
+    .__header .options-box .nav-items li{
+        line-height: 12px;
+    }
+
+    .__header .options-box .nav-items li a{
+        font-size: 12px;
+    }
+
+    .__header .option-items li {
+        padding-right: 8px;
+    }
+
+    .__header .option-items li:last-child{
+        padding-right: 0;
+    }
+
+    .__header .contact-box p{
+        font-size: 11px;
+    }
+
+    .__header .contact-box a{
+        font-size: 12px;
+    }
+
+    /* v2  */
+    .__header .option-items.v-white a {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .__header .options-box .login-register {
+        font-size: 11px;
+        line-height: 15px;
+        top: 2px;
+    }
+
+    /* v3 menu */
+    .__header .v3-variant {
+        margin-left: -28px;
+    }
+
+    .__header .menu-btn{
+        font-size: 12px;
+        max-width: 110px;
+    }
+
+    .__header .menu-btn img + img {
+        left: 15px;
+    }
+
+    .__header .menu-box ul a {
+        font-size: 12px;
+        padding-right: 42px;
+    }
+
+    .__header .menu-box li {
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .__header{
+       display: none;
+    }
+  
+}
