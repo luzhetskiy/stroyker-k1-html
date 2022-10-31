@@ -170,7 +170,7 @@ header ul.link--arrow-left li span{
 
 header ul.link--arrow-left span + a{
     padding-left: 58px;
-    padding-right: 0;
+    padding-right: 0!important;
 }
 
 
