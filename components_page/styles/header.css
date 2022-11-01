@@ -250,7 +250,6 @@ main{
 
 .__header .options-box .nav-items li a{
     font-size: 14px;
-    line-height: 16px;
     color: #FFFFFF;
     font-family: var(--rb);
     transition: 0.2s;
@@ -276,19 +275,30 @@ main{
 }
 
 .__header .option-items li a{
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
     color: #FF5F00;
     font-family: var(--rb);
     transition: 0.2s;
     display: flex;
     align-items: center;
+    position: relative;
+    padding-left: 21px;
+}
+
+.__header .option-items li:last-child{
+    padding-right: 0;
 }
 
 .__header .option-items li img{
     margin-right: 8px;
-    max-width: 21px;
+    max-width: 17px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
+
 
 .__header .option-items li a.active,
 .__header .option-items li a:hover{
@@ -300,10 +310,18 @@ main{
     display: flex;
 }
 
+.__header .option-items.v-white li a{
+    padding-left: 27px;
+}
+
 .__header .option-items.v-white a{
     color: #fff;
     font-size: 14px;
-    line-height: 15px;  
+    line-height: 17px;  
+}
+
+.__header .option-items.v-white img{
+    max-width: 21px;
 }
 
 /* contact box  */
@@ -325,12 +343,13 @@ main{
     position: relative;
     font-family: var(--rb);
     font-size: 14px;
-    line-height: 16px;
+    line-height: 17px;
     color: #FFFFFF;
     cursor: pointer;
     transition: 0.2s;
     display: flex;
     align-items: center;
+    padding-left: 20px;
 }
 
 .__header .contact-box p:hover{
@@ -340,7 +359,6 @@ main{
 .__header .contact-box a{
     font-family: var(--rb);
     font-size: 14px;
-    line-height: 16px;
     color: #FFFFFF;
     cursor: pointer;
     display: flex;
@@ -359,10 +377,11 @@ main{
     position: relative;
     animation: circleFlick 1s infinite linear;
     animation-delay: 0.1s;
-}
-
-.__header .show-number{
-    line-height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .__header .contact-box .circle:before{
