@@ -1,5 +1,9 @@
 /* FAT V2  */
 
+main{
+    padding-top: 120px !important;
+}
+
 .search-box.fat-v2-width{
     width: 377px;
     flex-shrink: 0;
@@ -18,6 +22,9 @@
 .__header .c-box-fat-v2 p{
     margin-bottom: 0;
     margin-right: 6px;
+    flex-wrap: wrap;
+    max-width: 160px;
+    padding-left: 20px!important;
 }
 
 .__header .c-box-fat-v2 .order-call{
@@ -199,6 +206,10 @@
 
     .__fat-v2-nav ul li a {
         font-size: 12px;
+    }
+
+    .__header .c-box-fat-v2 p{
+        max-width: 128px;
     }
     
     
