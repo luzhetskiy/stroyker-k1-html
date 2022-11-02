@@ -27,6 +27,10 @@ main{
     padding-left: 20px!important;
 }
 
+.__header .c-box-fat-v2 p a + a{
+    padding-top: 12px;
+}
+
 .__header .c-box-fat-v2 .order-call{
     border: 1px solid #FF5F00;
     padding: 12px 14px;
