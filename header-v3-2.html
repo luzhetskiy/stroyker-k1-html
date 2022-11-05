@@ -59,6 +59,13 @@
         <link rel="stylesheet" href="./components_page/styles/header-catalog.css">
         <!--  -->
 
+        <!-- header mobile  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.6/jquery.mmenu.all.css">
+        <link rel="stylesheet" href="./components_page/styles/custom-mmenu-styles.css">
+        <link rel="stylesheet" href="./components_page/styles/header-mobile.css">
+        <link rel="stylesheet" href="./components_page/styles/header-bottom-mobile.css">
+        <!--  -->
+
         <!-- свои стили v3  -->
         <link rel="stylesheet" href="./components_page/styles/header-v3.css">
         <!-- ---  -->
@@ -71,8 +78,8 @@
     <body class="frontpage wide-mode wide-mode-alter">
 
 
-             <!-- new header  v3-->
-             <header class="__header">
+            <!-- new header  v3-->
+            <header class="__header">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-2">
@@ -287,6 +294,160 @@
                 </div>
             </header>
 
+
+            <!-- header mobile  -->
+            <header class="header--mob">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="logo">
+                                <a href="#"><img src="./components_page/img/header-icons/logo.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="search--box">
+                                <div id="overlay_mob" onclick="javascript: close_all_mob();"></div>
+                                <!-- s-icon-left = кнопка submit было слево  -->
+                                <!-- s-icon-right = кнопка submit было справо  -->
+                                <form action="" class="s-icon-right">
+                                    <input type="text" autocomplete="off" id="edit_search_mob" onkeyup="javascript: find_my_div_mob();">
+                                    <button class="btn submit"><img src="./components_page/img/header-icons/s-icon-mob.svg" alt=""></button>
+                                </form>
+                                <div id="search-result-mob">
+                                    <a href="#" id="user_0" class="s-item-link">
+                                    <div class="s-item-img"><img src="./components_page/img/30851ff8e294859c3b812fef189cce5b.jpeg" alt=""></div>
+                                    <div class="s-item-info">
+                                        <span class="s-item-title">Золотое яблоко</span>
+                                        <span class="s-item-price">247$</span>
+                                    </div>
+                                    </a>
+                                    <a href="#" id="user_1" class="s-item-link">
+                                    <div class="s-item-img"><img src="./components_page/img/30851ff8e294859c3b812fef189cce5b.jpeg" alt=""></div>
+                                    <div class="s-item-info">
+                                        <span class="s-item-title">доска asd asd asd asdas </span>
+                                        <span class="s-item-price">247$</span>
+                                    </div>
+                                    </a>
+                                    <a href="#" id="user_2" class="s-item-link">
+                                    <div class="s-item-img"><img src="./components_page/img/30851ff8e294859c3b812fef189cce5b.jpeg" alt=""></div>
+                                    <div class="s-item-info">
+                                        <span class="s-item-title">корзина</span>
+                                        <span class="s-item-price">247$</span>
+                                    </div>
+                                    </a>
+                                    <a href="#" id="user_3" class="s-item-link">
+                                    <div class="s-item-img"><img src="./components_page/img/30851ff8e294859c3b812fef189cce5b.jpeg" alt=""></div>
+                                    <div class="s-item-info">
+                                        <span class="s-item-title">Золотое яблоко</span>
+                                        <span class="s-item-price">247$</span>
+                                    </div>
+                                    </a>
+                                    <a href="#" id="user_4" class="s-item-link">
+                                    <div class="s-item-img"><img src="./components_page/img/30851ff8e294859c3b812fef189cce5b.jpeg" alt=""></div>
+                                    <div class="s-item-info">
+                                        <span class="s-item-title">доска asd asd asd asdas </span>
+                                        <span class="s-item-price">247$</span>
+                                    </div>
+                                    </a>
+                                    <a href="#" id="user_5" class="s-item-link">
+                                    <div class="s-item-img"><img src="./components_page/img/30851ff8e294859c3b812fef189cce5b.jpeg" alt=""></div>
+                                    <div class="s-item-info">
+                                        <span class="s-item-title">корзина</span>
+                                        <span class="s-item-price">247$</span>
+                                    </div>
+                                    </a>
+
+
+                                    <a href="#" class="all-items-link">Все каталоги</a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-1">
+                            <div class="burger-box">
+                                <button class="btn" id="my-button"><img src="./components_page/img/header-icons/mob-burger.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mmenujs (mobile menu)  -->
+
+                <nav id="my-menu">
+                    <ul>
+                        <li><a href="#">Каталог</a>
+                            <ul>
+                                <li><a href="#">Образец выделения активного пункта 1</a></li>
+                                <li><a href="#">Если есть еще внутренные пункты</a>
+                                    <ul>
+                                        <li><a href="#">В. пункт 1</a></li>
+                                        <li><a href="#">В. пункт 2</a></li>
+                                        <li><a href="#">В. пункт 3</a></li>
+                                        <li><a href="#">В. пункт 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Образец выделения активного пункта 3</a></li>
+                                <li><a href="#">Образец выделения активного пункта 3</a></li>
+                                <li><a href="#">Образец выделения активного пункта 4</a></li>
+                                <li><a href="#">Образец выделения активного пункта 5</a></li>
+                                <li><a href="#">Образец выделения активного пункта 6</a></li>
+                                <li><a href="#">Образец выделения активного пункта 7</a></li>
+                            </ul>
+                        </li>
+                        <ul class="mm_navbar_mob">
+                            <li>
+                                <a href="#">Меню 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Меню 2</a>
+                            </li>
+                        </ul>
+
+                        <ul class="mm-other-options">
+                            <li><a href="#"><img src="./components_page/img/header-icons/item-orange.svg" alt=""> 3</a></li>
+                            <li><a href="#"><img src="./components_page/img/header-icons/tel-mob-icon.svg" alt=""> Заказать звонок</a></li>
+                        </ul>
+
+                        <ul class="mm-other-options">
+                            <li><a href="#"><img src="./components_page/img/header-icons/tel-mob-icon.svg" alt=""> +7-927-711-9393</a></li>
+                            <li><a href="#"><img src="./components_page/img/header-icons/tel-mob-icon.svg" alt=""> +7-927-711-9393</a></li>
+                        </ul>
+
+                        <!-- Личный кабинет  -->
+                        <li><a class="login" href="#"><img src="./components_page/img/header-icons/profile-icon-orange.svg" alt=""> Выйти</a></li>
+                    </ul>
+                    <!-- меню  -->
+                    
+                
+                </nav>
+            </header>
+            <!-- ---  --> 
+            
+            <!-- Нельзя менять section в div иначе mmenu (#my-menu) не будет работать корректно  -->
+            <section class="header--bottom-mob">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-5">
+                                <a href="#" class="custom-mob-number">
+                                    +7-927-711-9393
+                                </a>
+                            </div>
+                            <div class="col-3 pl--0 pr--0">
+                               <a href="#" class="custom-tel-24">
+                                    <img src="./components_page/img/header-icons/tel-24.svg" alt="">
+                                    Заказать звонок
+                               </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="custom-mob-cart bordered">
+                                    <span>15735622</span> <img src="./components_page/img/header-icons/cart-icon-white.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </section> 
+
+
+        <main>
+            
             <div class="helper"><a class="helper__trigger" href="javascript:void(0);">
                 <svg class="icon" viewBox="0 0 100 100" fill="currentColor">
                     <g transform="translate(50 50)">
@@ -315,10 +476,6 @@
 
             </div>
 
-
-
-
-        <main>
             <div class="home-banner">
                 <div class="owl-carousel" data-show-dots="" data-autoplay-timeout="5">
                     <!--slide-->
@@ -4384,8 +4541,11 @@
         <script src="https://vagonka-brus-doska.ru/static/catalog/js/catalog.js"></script>
 
         <!-- НОВЫЕ СКРИПТИ  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.6/jquery.mmenu.all.js"></script>
         <script src="./components_page/scripts/header-global.js"></script>
+        <script src="./components_page/scripts/header-global-mobile.js"></script>
         <script src="./components_page/scripts/header-search-catalog.js"></script>
+        <script src="./components_page/scripts/header-search-catalog-mobile.js"></script>
         <!-- ---  -->
 
         <script>
