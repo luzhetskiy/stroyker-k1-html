@@ -1,7 +1,9 @@
 /* FAT V2  */
 
-main{
-    padding-top: 120px !important;
+@media only screen and (min-width: 1024px) {
+    main{
+        padding-top: 120px !important;
+    }
 }
 
 .search-box.fat-v2-width{
@@ -26,6 +28,7 @@ main{
     max-width: 160px;
     padding-left: 20px!important;
 }
+
 
 .__header .c-box-fat-v2 p a + a{
     padding-top: 12px;

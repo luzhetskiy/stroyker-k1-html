@@ -33,6 +33,12 @@
 
 }
 
+@media only screen and (min-width: 1024px) {
+    header.header--mob{
+        display: none;
+    }
+}
+
 
 @media only screen and (max-width: 1280px) {
 
@@ -100,6 +106,7 @@
         line-height: 15px;
         top: 2px;
     }
+    
 
     
 }
@@ -107,6 +114,10 @@
 @media only screen and (max-width: 1024px) {
     .__header{
        display: none;
+    }
+
+    .header--mob{
+        display: flex;
     }
   
 }

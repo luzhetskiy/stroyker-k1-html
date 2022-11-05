@@ -433,11 +433,11 @@ ul {
         }
     }
 
-    @media (max-width: 767px) {
+    /* @media (max-width: 767px) {
         header {
             padding-top: 60px;
         }
-    }
+    } */
 
     .top-header {
         background-color: var(--header-top-bg-color, #fff);
