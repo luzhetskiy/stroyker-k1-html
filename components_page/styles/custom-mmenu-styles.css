@@ -5,11 +5,10 @@
     }
 }
 
-.my_menu_mob{
-    position: fixed;
-    left: 0;
-    top: 0;
+@media only screen and (max-width: 1024px) {
+    html, body { height: auto; }
 }
+
 
 #my-menu{
     height: calc(100% - 60px);
