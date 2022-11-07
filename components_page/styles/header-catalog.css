@@ -38,7 +38,7 @@
 
  .catalog-box{
     width: 100%;
-    background: #474747;
+    background: #333333;
     padding-top: 33px;
     padding-bottom: 33px;
     margin-top: 18px;
@@ -89,7 +89,7 @@
 
 /* hover--color  */
 header ul.hover--color a:hover {
-    color: #FF5F00;
+    color: #2363D1;
 }
 
 /* hover--underline  */
@@ -106,7 +106,7 @@ header ul.hover--underline li::after {
     right: 0;
     bottom: -7px;
     left: 0px;
-    border-bottom: 1px solid #FF5F00;
+    border-bottom: 1px solid #2363D1;
     transform: scaleX(0);
     transform-origin: center right;
     transition: transform 0.45s cubic-bezier(0.4, 0, 0, 1);

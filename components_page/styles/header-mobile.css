@@ -15,7 +15,7 @@
 
 
 header.header--mob{
-    background: #000000;
+    background: #fff;
     height: 60px;
     flex-wrap: wrap;
     align-items: center;
@@ -48,13 +48,35 @@ header.header--mob{
     font-family: var(--rb);
     font-size: 14px;
     line-height: 13px;
-    color: #FFFFFF;
+    color: #000000;
     width: 100%;
     text-align: center;
 }
 
 .header--mob .phone--box a + a{
     margin-top: 8px;
+}
+
+header.header--mob .cart-mob{
+    position: relative;
+    margin-right: 5px;
+}
+
+header.header--mob .cart--counter{
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    box-shadow: 0px 0px 5px rgb(212, 212, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--rb);
+    font-size: 9px;
 }
 
 /* search box mobile  */
@@ -217,7 +239,7 @@ header.header--mob{
     width: 100%;
     display: inline-block;
     font-family: var(--rb);
-    color: #FF5F00;
+    color: #1C52AC;
 }
 
 #search-result-mob .all-items-link{
@@ -230,7 +252,7 @@ header.header--mob{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FF5F00;
+    background: #1C52AC;
     color: #fff;
     font-family: var(--rb);
     padding: 10px 10px;
@@ -253,7 +275,7 @@ header.header--mob{
     font-family: var(--rb);
     font-size: 8px;
     line-height: 9px;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .burger-box .tel-mob img{

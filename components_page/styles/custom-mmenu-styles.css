@@ -21,11 +21,6 @@
 
 #mm-1 .mm-navbar__title{
     font-size: 0;
-    background-image: url(../img/header-icons/logo.svg);
-    background-size: 61px 10px;
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-color: #000;
     margin-left: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -79,13 +74,12 @@
     font-family: var(--rb);
     width: 75%;
 }
-.mm-listitem .mm-btn_next{
-    width: 50px;
-    border: solid 2px #fff;
+.mm-listitem .mm-btn_next:not(.mm-btn_fullwidth){
+    width: 100%;
 }
+
 .mm-listitem .mm-btn_next:before{
     display: none;
-    
 }
 .mm-btn_next:after{
     right: 19px;

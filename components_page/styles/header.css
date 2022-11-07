@@ -42,7 +42,7 @@ main{
 
 .__header{
     height: 80px;
-    background: #000000;
+    background: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
@@ -69,8 +69,8 @@ main{
 }
 
 .__header .catalog-btn{
-    background: rgb(17, 17, 17);
-    border: 1px solid #7C8994;
+    background: #333333;
+    border: 1px solid #333333;
     position: relative;
     margin: 0;
     padding: 5px 18px 5px 57px;
@@ -96,7 +96,7 @@ main{
     left: 30px;
     top: 0;
     bottom: 0;
-    background: #FF5F00;
+    background: #2363D1;
     border-radius: 5px;
     margin: auto;
     transition: 0.2s;
@@ -127,7 +127,7 @@ main{
     left: 0;
     width: 100%;
     height: 2px;
-    background: #FF5F00;
+    background: #2363D1;
     border-radius: 5px;
     transition: 0.2s;
 }
@@ -151,13 +151,16 @@ main{
 .__header .search-box input{
     width: 100%;
     height: 100%;
-    background: #2C2C2C;
-    border: 1px solid #7C8994;
+    background: #222222;
     padding-left: 16px;
     padding-right: 65px;
     color: #fff;
     font-family: var(--rr)!important;
     font-size: 14px;
+    border: 1px solid #333333;
+}
+.__header .search-box input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .__header .search-box .submit {
@@ -167,13 +170,12 @@ main{
     top: 0;
     right: 0;
     font-size: 0;
-    background: #2C2C2C;
-    border: 1px solid #7C8994;
+    background: #333333;
     cursor: pointer;
     transition: 0.2s;
     padding-left: 17px;
     padding-right: 17px;
-   
+    border-radius: 0px;
 }
 
 
@@ -181,9 +183,6 @@ main{
     background: #474747;
 }
 
-.__header .search-box input::placeholder{
-    color: #fff;
-}
 
 
 
@@ -212,11 +211,12 @@ main{
 }
 
 .__header .options-box .login-register a{
-    color: #fff;
+    color: #000;
 }
 
 .__header .options-box .login-register a:hover{
     text-decoration: underline;
+    color: #1C52AC;
 }
 
 .__header .options-box .login-register span{
@@ -255,7 +255,7 @@ main{
 
 .__header .options-box .nav-items li a{
     font-size: 14px;
-    color: #FFFFFF;
+    color: #000;
     font-family: var(--rb);
     transition: 0.2s;
     position: relative;
@@ -270,16 +270,16 @@ main{
     right: -13px;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    border-top: 3px solid #fff;
+    border-top: 3px solid #000;
 }
 
 .__header .options-box .nav-items li .location-caret:hover:before{
-    border-top-color: #FF5F00;
+    border-top-color: #2363D1;
 }
 
 .__header .options-box .nav-items li a.active,
 .__header .options-box .nav-items li a:hover{
-    color: #FF5F00;
+    color: #1C52AC;
     text-decoration: underline;
     text-underline-position: under;
 }
@@ -298,7 +298,7 @@ main{
 
 .__header .option-items li a{
     font-size: 14px;
-    color: #FF5F00;
+    color: #000;
     font-family: var(--rb);
     transition: 0.2s;
     display: flex;
@@ -324,7 +324,7 @@ main{
 
 .__header .option-items li a.active,
 .__header .option-items li a:hover{
-    color: #FF5F00;
+    color: #2363D1;
     text-decoration: underline;
 }
 
@@ -337,7 +337,7 @@ main{
 }
 
 .__header .option-items.v-white a{
-    color: #fff;
+    color: #000;
     font-size: 14px;
     line-height: 17px;  
 }
@@ -366,7 +366,7 @@ main{
     font-family: var(--rb);
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color: #000;
     cursor: pointer;
     transition: 0.2s;
     display: flex;
@@ -375,13 +375,13 @@ main{
 }
 
 .__header .contact-box p:hover{
-    color: #FF5F00;
+    color: #2363D1;
 }
 
 .__header .contact-box a{
     font-family: var(--rb);
     font-size: 14px;
-    color: #FFFFFF;
+    color: #000;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -393,7 +393,7 @@ main{
     width: 16px;
     height: 16px;
     border-radius: 100%;
-    border: solid 2px #FF5F00;
+    border: solid 2px #2363D1;
     flex-shrink: 0;
     margin-right: 6px;
     position: relative;
@@ -416,18 +416,18 @@ main{
     width: 0;
     height: 0;
     margin: auto;
-    border: solid 3px #FF5F00;
+    border: solid 3px #2363D1;
     border-radius: 100%;
     animation: circleFlick 1s infinite linear;
 }
 
 @keyframes circleFlick {
     0% {border-color: #fff; }
-    80% {border-color: #FF5F00; }
+    80% {border-color: #2363D1; }
     100% {border-color: #fff; } }
 
 .__header .contact-box a:hover{
-    color: #FF5F00;
+    color: #2363D1;
 }
 
 .__header .contact-box a img{
@@ -458,7 +458,7 @@ main{
 
 .__header .contact-box p a{
     display: none;
-    color: #FFFFFF;
+    color: #000;
 }
 
 
@@ -575,7 +575,7 @@ main{
     width: 100%;
     display: inline-block;
     font-family: var(--rb);
-    color: #FF5F00;
+    color: #1C52AC;
   }
  
   .__header #search-result .all-items-link{
@@ -588,7 +588,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FF5F00;
+    background: #1C52AC;
     color: #fff;
     font-family: var(--rb);
     padding: 10px 10px;
