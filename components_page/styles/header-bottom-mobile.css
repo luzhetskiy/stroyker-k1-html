@@ -4,6 +4,14 @@
     }
 }
 
+@media only screen and (max-width: 1024px) {
+   
+    .header--bottom-mob ~ main{
+        padding-top: 100px!important;
+    }
+
+}
+
 .header--bottom-mob{
     display: flex;
     height: 40px;
@@ -16,6 +24,7 @@
     border-top: 1px solid rgb(32, 32, 32);
     align-items: center;
 }
+
 
 .header--bottom-mob .custom-mob-cart{
     display: flex;

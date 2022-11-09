@@ -37,8 +37,10 @@
     header.header--mob{
         display: none;
     }
+    main{
+        padding-top: 80px!important;
+    }
 }
-
 
 @media only screen and (max-width: 1280px) {
 
@@ -119,5 +121,8 @@
     .header--mob{
         display: flex;
     }
-  
+    
+    main{
+        padding-top: 60px!important;
+    }
 }
