@@ -4033,6 +4033,12 @@ body {
 .welcome__side .aside-banners-grid:not(:first-child) {
   margin-top: 20px; }
 
+
+.conditional-section.wide-container .container:first-child{
+  max-width: 100%;
+  padding: 0;
+}
+
 @media (max-width: 1279.98px) {
   .welcome__side .new-banners, .welcome__side .aside-banners-grid {
     display: none; } }
