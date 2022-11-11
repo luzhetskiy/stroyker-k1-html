@@ -2318,7 +2318,7 @@ ul {
 
     @media (max-width: 767px) {
         .main-slider .item .slide-img {
-            height: auto
+            height: 300px
         }
 
         #yamap_addresses {
