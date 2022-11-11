@@ -2313,7 +2313,9 @@ ul {
     }
 
     .main-slider .item .slide-img {
-        height: 220px
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 
     @media (max-width: 767px) {
@@ -2341,7 +2343,7 @@ ul {
     }
 
     .main-slider .item .slide-content {
-        position: absolute;
+        position: relative;
         top: 0;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -2354,6 +2356,7 @@ ul {
         justify-content: center;
         width: 260px;
         height: 100%;
+        margin-left: auto;
     }
 
     .main-slider .item .slide-content .btn{
@@ -2389,8 +2392,6 @@ ul {
         line-height: 28px;
         color: #FFFFFF;
         margin-bottom: 25px;
-        max-height: 112px;
-        overflow: hidden;
     }
 
     @media (max-width: 767px) {
