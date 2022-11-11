@@ -414,10 +414,16 @@
 
             </div>
 
+           
+
             <!-- это ширина на весь экран  -->
-            <section class="conditional-section wide-container">
+            <section class="conditional-section  wide-container">
                 <div class="container">
-                    <div class="home-banner">
+                     <!-- обрезка влево -  cropped--left -->
+                     <!-- обрезка вправо - cropped--right -->
+                     <!-- без обрезки - убираем классы cropped--left и cropped--right -->
+
+                    <div class="home-banner cropped--left">
                         <div class="owl-carousel" data-show-dots="" data-autoplay-timeout="5">
                             <!--slide-->
 
@@ -448,9 +454,9 @@
             </section>
 
             <!-- это в ширине контентной части  -->
-            <section class="conditional-section">
+            <section class="conditional-section nopad-mob">
                 <div class="container">
-                    <div class="home-banner">
+                    <div class="home-banner cropped--right">
                         <div class="owl-carousel" data-show-dots="" data-autoplay-timeout="5">
                             <!--slide-->
 
@@ -1046,7 +1052,7 @@
                             
                         </div>
                         <div class="welcome__content" id="welcome-content">
-                            <div class="home-banner">
+                            <div class="home-banner cropped--right">
                                 <div class="owl-carousel" data-show-dots="" data-autoplay-timeout="5">
                                     <!--slide-->
             
@@ -1644,7 +1650,10 @@
                             
                         </div>
                         <div class="welcome__content" id="welcome-content">
-                            <div class="main-slider">
+                             <!-- обрезка влево - cropped--left -->
+                             <!-- обрезка вправо - cropped--right -->
+                            <!-- без обрезки - убираем классы cropped--left и cropped--right -->
+                            <div class="main-slider cropped--right">
                                 <div class="owl-carousel">
                                     <div class="item">
                                         <div class="slide-img"><img src="./components_page/img/26134 1.jpg" alt=""></div>
