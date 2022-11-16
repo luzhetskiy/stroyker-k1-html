@@ -53,9 +53,10 @@
     }
 
     .__header .catalog-btn{
-        padding: 5px 18px 5px 35px;
+        padding: 5px 4px 5px 35px;
         margin-right: 5px;
         font-size: 12px;
+        max-width: 155px;
     }
 
     .__header .catalog-btn span{
