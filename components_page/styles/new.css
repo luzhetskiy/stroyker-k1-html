@@ -4571,7 +4571,7 @@ header {
       margin: 0 15px 0 0; }
   @media screen and (min-width: 1024px) {
      header.fixed:not(.header_landing) {
-          top: -80px; }
+          top: -80px!important; }
   }
   @media screen and (min-width: 768px) {
     header.fixed {
