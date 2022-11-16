@@ -4569,9 +4569,9 @@ header {
     header .header-fixed-content .header-phone {
       white-space: nowrap;
       margin: 0 15px 0 0; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
      header.fixed:not(.header_landing) {
-          top: -80px!important; }
+        top: -60px; }
   }
   @media screen and (min-width: 768px) {
     header.fixed {
@@ -4579,8 +4579,7 @@ header {
       position: fixed;
       transform: translateY(100%);
       box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.15); }
-      header.fixed:not(.header_landing) {
-        top: -60px; }
+      
         header.fixed:not(.header_landing) .top-header {
           display: none; }
         header.fixed:not(.header_landing) .header-user {
