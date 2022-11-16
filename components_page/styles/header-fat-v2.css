@@ -7,7 +7,7 @@
 }
 
 .search-box.fat-v2-width{
-    width: 377px;
+    width: 377px!important;
     flex-shrink: 0;
 }
 
