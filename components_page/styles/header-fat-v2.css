@@ -79,10 +79,12 @@
 .__fat-v2-options ul{
     display: flex;
     align-content: center;
+    height: 100%;
 }
 
 .__fat-v2-options ul li{
     padding-right: 13px;
+    height: 100%;
 }
 
 .__fat-v2-options ul li:last-child{
@@ -97,6 +99,7 @@
     transition: 0.2s;
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .__fat-v2-options ul li img{
