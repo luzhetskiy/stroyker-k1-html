@@ -71,15 +71,19 @@
     border: 1px solid #333333;
     position: relative;
     margin: 0;
-    padding: 5px 18px 5px 57px;
+    padding: 5px 4px 5px 57px;
     margin-right: 8px;
     flex-shrink: 0;
     transition: 0.2s;
     height: 100%;
     font-size: 14px;
-    line-height: 17px;
     letter-spacing: 0.05em;;
     line-height: normal;
+    max-width: 195px;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 
