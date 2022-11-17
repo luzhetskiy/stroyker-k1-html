@@ -2357,6 +2357,7 @@ ul {
         width: 260px;
         height: 100%;
         margin-left: auto;
+        min-height: 217px;
     }
 
     .main-slider .item .slide-content .btn{
@@ -2383,6 +2384,7 @@ ul {
             padding: 15px 15px;
             top: auto;
             bottom: 0px;
+            min-height: 211px;
         }
     }
 
