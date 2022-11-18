@@ -2134,6 +2134,9 @@ ul {
             box-shadow: none;
             margin-top: 20px;
         }
+        .wide-mode-alter .catalog-side.mobile-show{
+            margin: 0 0!important;
+        }
     }
 
     .catalog-side__title {
@@ -14356,3 +14359,13 @@ ul {
                       .ya-share2__item {
                           margin: 5px 18px 5px 0 !important;
                       }
+
+                      @media (max-width: 767px) {
+                        .conditional-section.bg-color{
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            background-color: var(--frontpage-first-screen-bg-color, #F5F5F5);
+                          }
+                      }
+                      
+                      
