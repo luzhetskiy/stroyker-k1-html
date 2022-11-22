@@ -19,8 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (e.target.matches('.catalog-btn')){
           catalogBtn.classList.toggle('toggled');
           catalogBox.classList.toggle('show');
-          menuBtn.classList.remove('toggled');
-          menuBox.classList.remove('show');
+          if(menuBtn) {
+            menuBtn.classList.remove('toggled');
+            menuBox.classList.remove('show');
+          }
         }
         else{
           return;
@@ -32,8 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (e.target.matches('.menu-btn')){
           menuBtn.classList.toggle('toggled');
           menuBox.classList.toggle('show');
-          catalogBtn.classList.remove('toggled');
-          catalogBox.classList.remove('show');
+          if(catalogBtn){
+            catalogBtn.classList.remove('toggled');
+            catalogBox.classList.remove('show');
+          }
         }
         else{
           return;
