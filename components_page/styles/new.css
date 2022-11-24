@@ -5346,8 +5346,8 @@ header {
     padding-bottom: 26px; }
   @media (max-width: 575.98px) {
      .home-banner.nopad-mob{
-      width: calc(100% + 30px);
-      margin-left: -15px;
+      width: calc(100% + 32px);
+      margin-left: -16px;
     }
     .conditional-section_bg {
       background-position: center right; }
