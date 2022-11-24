@@ -1,18 +1,11 @@
-@font-face {
-    font-family: "Golos";
-    src: url("../fonts/Golos_Regular.eot");
-    src: url("../fonts/Golos_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Golos_Regular.woff2") format("woff2"), url("../fonts/Golos_Regular.woff") format("woff"), url("../fonts/Golos_Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
+    font-display: swap;
     font-family: "Golos";
-    src: url("../fonts/Golos.eot");
-    src: url("../fonts/Golos_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Golos_Bold.woff2") format("woff2"), url("../fonts/Golos_Bold.woff") format("woff"), url("../fonts/Golos_Bold.ttf") format("truetype");
-    font-weight: bold;
+    font-weight: 400;
     font-style: normal;
-}
+    src: url("../font/GolosText-Regular.woff") format("woff"); }
+
 
 html,
 body,
@@ -1706,6 +1699,7 @@ ul {
     .btn-border--delete .icon {
         margin-right: 3px;
         height: 24px;
+        flex-shrink: 0;
     }
 
     .btn-border--delete .icon svg {
@@ -3171,7 +3165,7 @@ ul {
               cursor: pointer;
               width: 38px;
               height: 38px;
-              background: #fff url(../images/slider-nav.svg) 55% 50% no-repeat;
+              background: #fff url(../img/icons/slider-nav-arrow.svg) 55% 50% no-repeat;
               background-size: 15px 15px;
               font-size: 0;
               margin-left: 10px;
@@ -3484,7 +3478,7 @@ ul {
                     cursor: pointer;
                     width: 38px;
                     height: 38px;
-                    background: #fff url(../images/slider-nav.svg) 55% 50% no-repeat;
+                    background: #fff url(../img/icons/slider-nav-arrow.svg) 55% 50% no-repeat;
                     background-size: 15px 15px;
                     font-size: 0;
                     border-radius: 50%;
@@ -10718,9 +10712,21 @@ ul {
                           display: block;
                           width: 100%;
                           border: 2px solid transparent;
-                          background: #F3F6FB;
                           height: auto;
-                          min-height: 80px;
+                         
+                      }
+
+                      .radio label{
+                            background: #F3F6FB;
+                            border: solid 2px transparent;
+                            border-radius: 2px;
+                            transition: all 0.2s;
+
+                      }
+
+                      .radio [type=radio]:checked + label{
+                            background: #fff;
+                            border-color: #2363D1;
                       }
 
                       .radio.active {
@@ -10774,7 +10780,7 @@ ul {
                           top: 15px;
                           width: 20px;
                           height: 20px;
-                          background: url(../images/radio.svg);
+                          background: url(../img/icons/radio.svg);
                       }
 
                       .radio [type=radio]:not(:checked) + label:after {
@@ -10785,7 +10791,7 @@ ul {
                       }
 
                       .radio [type=radio]:checked + label:before {
-                          background: url(../images/radio-active.svg);
+                          background: url(../img/icons/radio-active.svg);
                       }
 
                       .radio [type=radio]:disabled:not(:checked) + label:before {
@@ -13989,6 +13995,57 @@ ul {
                           margin-bottom: 60px;
                       }
 
+                      .comparison__filter {
+                        display: flex;
+                        width: 100%;
+                        flex-wrap: wrap;
+                        margin-bottom: 25px;
+                        padding-bottom: 30px;
+
+                      }
+
+                      .comparison__filter button{
+                        margin-right: 15px;
+                        margin-bottom: 10px;
+                        padding: 10px 20px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #333333;
+                        background: #FFFFFF;
+                        border: 1px solid #000000;
+                        border-radius: 2px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #333333;
+                        cursor: pointer;
+                        font-family: 'Golos';
+                        transition: 0.2s;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        position: relative;
+                        overflow: hidden;
+                      }
+
+                      .comparison__filter button:hover{
+                        background: #F3F6FB;
+                        border-color: #2363D1;
+                        color: #2363D1;
+                      }
+
+                      .comparison__filter button:focus{
+                        background: #2363D1;
+                        border-color: #2363D1;
+                        color: #FFF;
+                      }
+
+                      @media (max-width: 767px) {
+                        .comparison__filter{
+                            padding-bottom: 10px;
+                            margin-bottom: 0;
+                        }
+                      }
+                      
+
                       @media (max-width: 767px) {
                           .comparison {
                               -webkit-box-orient: vertical;
@@ -14034,7 +14091,7 @@ ul {
                       }
 
                       .comparison__radios {
-                          padding-top: 10px;
+                          /* padding-top: 10px; */
                           padding-right: 10px;
                           height: 415px;
                       }
@@ -14110,8 +14167,8 @@ ul {
                           line-height: 20px;
                           color: #767676;
                           opacity: 0.75;
-                          margin-bottom: 5px;
-                          margin-top: -25px;
+                          margin-bottom: 15px;
+                          
                       }
 
                       @media (max-width: 767px) {
