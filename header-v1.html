@@ -384,9 +384,7 @@
             </header>
            
            
-        <!-- класс nopad-mob это для home-banner в container-е, удаляет padding-left и padding-right чтобы
-        слайдер было на полном ширине в моб. -->
-        <main class="nopad-mob">
+        <main>
             
             <div class="helper"><a class="helper__trigger" href="javascript:void(0);">
                 <svg class="icon" viewBox="0 0 100 100" fill="currentColor">
@@ -516,9 +514,10 @@
             </section>
 
             <!-- это в ширине контентной части  -->
-            <section class="conditional-section nopad-mob">
+            <section class="conditional-section">
                 <div class="container">
-                    <div class="home-banner cropped--right">
+                    <!-- Если у home-banner есть container как родителный элемент, к home-banner добовляем класс nopad-mob чтобы в моб. не было padding-left и right  -->
+                    <div class="home-banner nopad-mob cropped--right">
                         <div class="owl-carousel" data-show-dots="" data-autoplay-timeout="5">
                             <!--slide-->
 
