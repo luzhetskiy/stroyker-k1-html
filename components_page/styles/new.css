@@ -5345,9 +5345,9 @@ header {
   .conditional-section .main-slider {
     padding-bottom: 26px; }
   @media (max-width: 575.98px) {
-    main.nopad-mob .container:first-child{
-      padding-left: 0;
-      padding-right: 0;
+     .home-banner.nopad-mob{
+      width: calc(100% + 30px);
+      margin-left: -15px;
     }
     .conditional-section_bg {
       background-position: center right; }
