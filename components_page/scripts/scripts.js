@@ -203,7 +203,16 @@ $('.product-slider--full .owl-carousel').owlCarousel({
     0: {
       items: 1
     },
-    992: {
+    576: {
+      items: 2
+    },
+    767: {
+      items: 2
+    },
+    1024: {
+      items: 3
+    },
+    1290: {
       items: 4
     }
   }
