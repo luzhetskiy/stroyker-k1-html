@@ -198,13 +198,13 @@ $('.product-slider--full .owl-carousel').owlCarousel({
   margin: 0,
   nav: true,
   dots: false,
-  items: 3,
+  items: 4,
   responsive: {
     0: {
-      items: 2
+      items: 1
     },
     992: {
-      items: 3
+      items: 4
     }
   }
 });
