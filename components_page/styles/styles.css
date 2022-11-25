@@ -2897,13 +2897,37 @@ ul {
           }
 
           @media (max-width: 767px) {
-              .product-slider {
-                  -webkit-box-orient: vertical;
-                  -webkit-box-direction: normal;
-                  -ms-flex-direction: column;
-                  flex-direction: column;
-              }
+            .product-slider {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+
+          .product-slider.item__fixed-height .product-item,
+          .product-slider.item__fixed-height .product-card-v2 {
+            height: 385px;
+            margin-bottom: 0!important;
           }
+
+          @media (max-width: 767px) {
+
+            .product-slider.item__fixed-height .product-item{
+                border-left: 1px solid #D9D9DE;
+                border-right: 1px solid #D9D9DE;
+                min-height: 164px;
+            }
+            
+            .product-slider.item__fixed-height .product-item,
+            .product-slider.item__fixed-height .product-card-v2 {
+              height: auto;
+            }
+
+           
+          }
+
+        
 
           .product-slider .btn-center {
               padding: 0 15px;
@@ -13995,28 +14019,20 @@ ul {
                           margin-bottom: 60px;
                       }
 
-                      .comparison__filter {
+                      .comparison__block {
                         display: flex;
                         width: 100%;
+                        position: relative;
                         flex-wrap: wrap;
                         margin-bottom: 25px;
                         padding-bottom: 30px;
 
                       }
 
-                      .comparison__filter button{
+                      .comparison__block label{
                         margin-right: 15px;
-                        margin-bottom: 10px;
-                        padding: 10px 20px;
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #333333;
-                        background: #FFFFFF;
-                        border: 1px solid #000000;
+                        margin-bottom: 5px;
                         border-radius: 2px;
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #333333;
                         cursor: pointer;
                         font-family: 'Golos';
                         transition: 0.2s;
@@ -14024,22 +14040,47 @@ ul {
                         text-overflow: ellipsis;
                         position: relative;
                         overflow: hidden;
+                        display: inline-block;
+                        max-width: 100%;
                       }
 
-                      .comparison__filter button:hover{
+                      .comparison__block span{
+                        padding: 10px 20px;
+                        display: inline-block;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #333333;
+                        background: #FFFFFF;
+                        border: 1px solid #000000;
+                        transition: 0.2s;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        max-width: 100%;
+                      }
+
+                      .comparison__block label input{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        z-index: -1;
+                      }
+
+                      .comparison__block label:hover span{
                         background: #F3F6FB;
                         border-color: #2363D1;
                         color: #2363D1;
                       }
 
-                      .comparison__filter button:focus{
+                      .comparison__block input[type=radio]:checked + span{
                         background: #2363D1;
                         border-color: #2363D1;
                         color: #FFF;
                       }
 
                       @media (max-width: 767px) {
-                        .comparison__filter{
+                        .comparison__block{
                             padding-bottom: 10px;
                             margin-bottom: 0;
                         }
