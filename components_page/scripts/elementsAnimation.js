@@ -20,12 +20,6 @@ $(document).ready(function () {
         "data-aos": "zoom-out-right",
         "data-aos-duration": "700"
     });
-    // owl-nav
-    $('.owl-nav').attr({
-        "data-aos": "zoom-in",
-        "data-aos-duration": "500",
-        "data-aos-delay": "700",
-    });
     // .category-slider owl-nav
     $('.category-slider .owl-item').attr({
         "data-aos": "zoom-in",
