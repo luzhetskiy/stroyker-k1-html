@@ -525,13 +525,13 @@
                 <h5>это ширина на весь экран + блок слева и справа</h5>
                 <h6>Если в баннере есть html блок slide-content то к home-banner добовляем inner-block__active ну и внутри home-banner__slide блок slide-content</h6>
             </div>
-            <section class="conditional-section  wide-container">
+            <section class="conditional-section wide-container">
                 <div class="container">
                      <!-- обрезка влево -  cropped--left -->
                      <!-- обрезка вправо - cropped--right -->
                      <!-- без обрезки - убираем классы cropped--left и cropped--right -->
 
-                     <!-- Если в баннере есть html блок slide-content то к home-banner добовляем inner-block__active ну и внутри home-banner__slide блок slide-content -->
+                     <!-- Если в баннере есть html блок slide-content то к home-banner добовляем inner-block__active ну и внутри home-banner__slide блок slide-content (в этом варианте с обвернутым контейнером с классом container content-container) -->
 
                     <div class="home-banner inner-block__active cropped--left">
                         <div class="owl-carousel" data-show-dots="" data-autoplay-timeout="5">
@@ -548,9 +548,15 @@
                                 <!-- блок slide-content лево - align--left -->
                                 <!-- блок slide-content право - убиранем класс align--left -->
                                 <!-- slide content  -->
-                                <div class="slide-content align--left" >
-                                    <div class="slide-content__title">Счёт на оплату сразу из корзины или заголовок на четыре строки</div>
-                                    <a href="#" class="btn btn--rubber">В каталог</a>
+
+                                <!-- 07.12.2022 обвернул slide-content в container с классом content-container
+                                    чтобы в ББ в полном ширине хтмл блок видно было в контентом часте,
+                                    в styles.css легко можно найти новые стили для этого найдя просто класс content-container  -->
+                                <div class="container content-container">
+                                    <div class="slide-content align--left" >
+                                        <div class="slide-content__title">Счёт на оплату сразу из корзины или заголовок на четыре строки</div>
+                                        <a href="#" class="btn btn--rubber">В каталог</a>
+                                    </div>
                                 </div>
 
                             </div>
@@ -565,9 +571,15 @@
 
                                 <!-- блок slide-content право - убиранем класс align--left -->
                                 <!-- slide content  -->
-                                <div class="slide-content" >
-                                    <div class="slide-content__title">Счёт на оплату сразу из корзины или заголовок на четыре строки</div>
-                                    <a href="#" class="btn btn--rubber">В каталог</a>
+
+                                <!-- 07.12.2022 обвернул slide-content в container с классом content-container
+                                    чтобы в ББ в полном ширине хтмл блок видно было в контентом часте,
+                                    в styles.css легко можно найти новые стили для этого найдя просто класс content-container   -->
+                                <div class="container content-container">
+                                    <div class="slide-content" >
+                                        <div class="slide-content__title">Счёт на оплату сразу из корзины или заголовок на четыре строки</div>
+                                        <a href="#" class="btn btn--rubber">В каталог</a>
+                                    </div>
                                 </div>
 
                             </div>
