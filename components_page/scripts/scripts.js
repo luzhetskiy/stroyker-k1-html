@@ -59,6 +59,9 @@ $('.catalog-inner').click(function () {
   $(this).toggleClass('open');
   $('.catalog-inner-content').toggle(0);
 });
+
+
+
 $(function () {
   // This will select everything with the class smoothScroll
   // This should prevent problems with carousel, scrollspy, etc...
@@ -193,27 +196,29 @@ $('.partners-slider .owl-carousel').owlCarousel({
     }
   }
 });
-$('.product-slider--full .owl-carousel').owlCarousel({
-  loop: true,
-  margin: 0,
-  nav: true,
-  dots: false,
-  items: 4,
-  responsive: {
-    0: {
-      items: 1
-    },
-    576: {
-      items: 2
-    },
-    1024: {
-      items: 3
-    },
-    1290: {
-      items: 4
-    }
-  }
-});
+
+// $('.product-slider--full .owl-carousel').owlCarousel({
+//   loop: true,
+//   margin: 0,
+//   nav: true,
+//   dots: false,
+//   items: 4,
+//   responsive: {
+//     0: {
+//       items: 2
+//     },
+//     576: {
+//       items: 2
+//     },
+//     1024: {
+//       items: 3
+//     },
+//     1290: {
+//       items: 4
+//     }
+//   }
+// });
+
 $('.input-number').each(function () {
   var spinner = $(this),
       input = spinner.find('input[type="number"]'),
