@@ -66,9 +66,8 @@
 }
 .hero-bg__logo {
     position: absolute;    
-    bottom: 0;
+    bottom: -355px;
     right: 10%;
-    transform: translateY(73%);
     z-index: 1;
     animation-name: spinning;
     animation-duration: 6000ms;
@@ -167,8 +166,8 @@
     }
     .hero-bg__logo {
         right: auto;
-        left: 50%;
-        transform: translate(-50%,0);
+        left: calc((100% - 485px) / 2);
+        bottom: 0;
     }
 }
 @media (max-width: 768px) {
@@ -210,11 +209,10 @@
         line-height: 16px;
     }
     .hero-bg__logo {
-        top: 57%;
+        top: 1100px;
         bottom: auto;
         right: auto;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        left: calc((100% - 476px) / 2);
         width: 476px;
         height: 476px;
     }
