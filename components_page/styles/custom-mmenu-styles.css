@@ -19,6 +19,14 @@
 
 }
 
+#my-menu{
+    opacity: 0;
+}
+
+#my-menu.mm-menu_opened{
+    opacity: 1;
+}
+
 #mm-1 .mm-navbar__title{
     font-size: 0;
     margin-left: 0;
