@@ -1,10 +1,10 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 991px) {
     .header--bottom-mob{
         display: none!important;
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 991px) {
    
     .header--bottom-mob ~ main{
         padding-top: 100px!important;

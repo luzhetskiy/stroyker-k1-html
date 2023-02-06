@@ -223,11 +223,9 @@
     .__header .c-box-fat-v2 p{
         max-width: 128px;
     }
-    
-    
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 991px) {
     
     .__h-fat-v2-bottom{
         display: none;

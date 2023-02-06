@@ -33,7 +33,7 @@
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 991px) {
     header.header--mob{
         display: none;
     }
@@ -59,7 +59,7 @@
         max-width: 155px;
     }
 
-    .__header .catalog-btn span{
+    .__header .catalog-btn span:first-child{
         left: 10px;
     }
 
@@ -114,7 +114,8 @@
     
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 991px) {
+   
     .__header{
        display: none;
     }

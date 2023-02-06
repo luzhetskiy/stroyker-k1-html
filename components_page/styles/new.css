@@ -2470,7 +2470,7 @@
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
-    max-width: 720px; } }
+    max-width: 960px; } }
 
 @media (min-width: 1024px) {
   .container, .container-sm, .container-md, .container-lg {
@@ -4509,7 +4509,7 @@ header {
     header .header-fixed-content .header-phone {
       white-space: nowrap;
       margin: 0 15px 0 0; }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 991px) {
    header.fixed:not(.header_landing) {
         top: -80px!important; }
 }
