@@ -38,6 +38,7 @@
 @media (min-width: 991px){
     .__header .row .col-lg-2{width: 16.66667%;}
     .__header .row .col-lg-6{width: 50%;}
+    .__header .row .col-lg-4{width: 33.33333%;}
 }
 
 .__header{
