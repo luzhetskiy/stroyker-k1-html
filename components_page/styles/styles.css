@@ -2185,7 +2185,8 @@ ul {
     }
 
     @media (max-width: 767px) {
-        .catalog-side__content {
+        .catalog-side__content,
+        .catalog-side__content-accordeon {
             display: none;
         }
     }
