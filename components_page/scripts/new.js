@@ -399,6 +399,7 @@ var SliderConstructor = /*#__PURE__*/function () {
       this.params.autoplay = this.element.getAttribute('data-autoplay-timeout') !== null;
       this.params.autoplayTimeout = +this.element.getAttribute('data-autoplay-timeout') || 5000;
       this.params.arrows = this.element.getAttribute('data-no-arrows') === null ? true : false;
+      this.params.dots = this.element.getAttribute('data-no-dots') === null ? true : false;
       this.params.adaptiveHeight = this.element.getAttribute('data-adaptive-height') !== null;
       this.params.centerMode = this.element.getAttribute('data-center') === null ? false : true;
       this.params.count = {};
@@ -526,7 +527,7 @@ var SliderConstructor = /*#__PURE__*/function () {
         nextArrow: this.nextArrow,
         arrows: this.params.arrows,
         adaptiveHeight: this.params.adaptiveHeight,
-        dots: true,
+        dots: this.params.dots,
         centerMode: this.params.centerMode,
         accessibility: false,
         responsive: [{
