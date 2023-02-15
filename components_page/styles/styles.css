@@ -2050,22 +2050,7 @@ ul {
             display: none;
     }
 
-  .catalog-header-content ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-    .catalog-header-content li {
-        width: calc(100%/3);
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
+  
 
     .catalog-header-content a {
         display: -webkit-box;
@@ -2077,7 +2062,6 @@ ul {
         -ms-flex-align: center;
         align-items: center;
         position: relative;
-        padding-left: 20px;
         font-size: 18px;
         color: #fff;
         -webkit-transition: 0.5s;
@@ -2095,9 +2079,9 @@ ul {
         top: calc(50% - 8px);
     }
 
-    .catalog-header-content a:hover {
+    /* .catalog-header-content a:hover {
         background: var(--main-elements-color, #2363D1);
-    }
+    } */
 
     /* НОВЫЕ СТИЛИ КАТАЛОГА ДЛЯ ШАПКИ ( ЕСТЬ ЕЩЕ И СТИЛИ В header-catalog.css ) */
     .catalog-header-content{
