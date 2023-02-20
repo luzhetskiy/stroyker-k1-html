@@ -936,8 +936,8 @@ $(keypressSliders).each(function (index, keypressSlider) {
 });
 
 // accordion 
-$('.acc__toggle').click(function(e) {
-  e.preventDefault();
+$('.acc__toggle:not(.not_toggle)').click(function(e) {
+  // e.preventDefault();
 
   var $this = $(this);
   if ($this.next().hasClass('show')) {
