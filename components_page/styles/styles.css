@@ -11880,7 +11880,7 @@ ul {
                         transform: rotate(135deg);
                     }
 
-                    .custom__accordion.v-underline .acc__toggle-inner:before{
+                    .custom__accordion.v-underline .acc__toggle-inner:not(.not_toggle):before{
                         content: "";
                         position: absolute;
                         bottom: 2px;
