@@ -485,7 +485,7 @@
 
                         <!-- аккордеон вариант (классу catalog-side__content добавилось класс -accordeon чтобы css конфликты не были, в scripts.js добавилось одна строка - $('.catalog-side__content-accordeon').toggle(0); ) -->
                         <div class="catalog-side__content-accordeon">
-                             <ul class="custom__accordion v-underline mb-0">
+                             <ul class="custom__accordion v-arrow mb-0">
                                 <!-- Утепление -->
                                 <li>
                                     <a class="acc__toggle" href="javascript:void(0);">Утепление</a>
@@ -594,25 +594,12 @@
           
                   <div class="content-block">
                     <span class="h1">Каталог </span>
-                    <!-- <span class="comparison-category__title">Категории (2)</span> -->
 
-                    <div class="comparison__block">
-                        <label>
-                            <input type="radio" name="comparison__filter">
-                            <span>Утепление</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="comparison__filter">
-                            <span>Изоляция</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="comparison__filter">
-                            <span>Водосточные и дренажные системы</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="comparison__filter">
-                            <span>Кровля</span>
-                        </label>
+                    <div class="catalog__links-block">
+                        <a href="#">Утепление</a>
+                        <a href="#">Изоляция</a>
+                        <a href="#">Водосточные и дренажные системы</a>
+                        <a href="#">Кровля</a>
                     </div>
 
                     <div class="comparison">
@@ -621,7 +608,7 @@
                         <!-- v-underline - аккордеон с полосками  -->
                         <!-- v-arrow - аккордеон с стрелками  -->
 
-                        <span>стрелками</span>
+                        <span>стрелками (Открывается до фанеры</span>
                         <ul class="custom__accordion v-arrow">
                             <!-- Утепление -->
                             <li>
@@ -708,6 +695,30 @@
                                         </div>
                                     </li>
                                 </ul>
+                            </li>
+                        </ul>
+
+                        <span>стрелками (Открывается до листовых</span>
+                        <ul class="custom__accordion v-arrow">
+                            <!-- Утепление -->
+                            <li>
+                                <a class="acc__toggle" href="javascript:void(0);">Утепление</a>
+                                <div class="inner last_inner">
+                                    <p><a href="#">Листовые строительные материалы</a></p>
+                                    <p><a href="#">Листовые строительные материалы</a></p>
+                                    <p><a href="#">Листовые строительные материалы</a></p>
+                                    <p><a href="#">Листовые строительные материалы</a></p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <span>Не открывается</span>
+                        <ul class="custom__accordion v-arrow">
+                            <!-- Утепление -->
+                            <li>
+                                <a class="acc__toggle not_toggle" href="#">Утепление</a>
+                                <a class="acc__toggle not_toggle" href="#">Утепление 2</a>
+                                <a class="acc__toggle not_toggle" href="#">Утепление 3</a>
                             </li>
                         </ul>
 
