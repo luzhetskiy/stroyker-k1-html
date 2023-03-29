@@ -1,0 +1,145 @@
+/* ВСЕ ПЕРЕМЕННЫЕ ДЛЯ ШАПКИ  */
+:root{
+
+    /* /////// ПЕРЕМЕННЫЕ НАХОДИТСЯ В ФАЙЛЕ header.css ///////  */
+
+    /* Фон шапки  */
+    --header__bg: #fff;
+
+    /* -----КНОПКА каталог товаров-----  */
+    --catalog-btn__bg: #333333; /* фон */
+    --catalog-btn__borderColor: #333333; /* обводка */
+    --catalog-btn__color: #fff; /* цвет текста */
+    --catalog-btn__burgerColor: #2363D1; /* цвет бургера в кнопке - каталог товаров  */
+
+    /* -----ПОСЛЕ ХОВЕРА - КНОПКА каталог товаров----- */
+    --catalog-btn__bg--hover: #474747; /*  фон */
+    --catalog-btn__borderColor--hover: red; /* обводка */
+    --catalog-btn__color--hover: red; /* цвет текста */
+    --catalog-btn__burgerColor--hover: red; /* цвет бургера в кнопке */
+
+    /* ----- ПОЛЕ Поиск-----  */
+    --search-box__bg: #222222; /* фон */
+    --search-box__borderColor: #333333; /* обводка */
+    --search-box__color: #fff; /* цвет текста */
+    --search-box__placeholderColor: rgba(255, 255, 255, 0.5); /* цвет placeholder */
+
+    /* ----- КНОПКА В ПОЛЕ Поиск-----  */
+    --search-box-submit__bg: #333333; /* фон */
+    --search-box-submit__borderColor: #333333; /* обводка */
+
+    /* -----ПОСЛЕ ХОВЕРА - КНОПКА В ПОЛЕ Поиск-----  */
+    --search-box-submit__bg--hover: red; /* фон */
+    --search-box-submit__borderColor--hover: green; /* обводка */
+
+    /* -----РЕЗУЛЬТАТ ТОВАРА В ПОЛЕ Поиск-----  */
+    --search-box-item__bg: #fff; /* фон */
+    --search-box-item__borderBottomColor: rgba(0, 0, 0, 0.13); /* обводка с низу */
+    --search-box-item__color: #000; /* цвет текста */
+    --search-box-item__priceColor: #1C52AC; /* цвет текста цены */
+
+    /* -----ПОСЛЕ ХОВЕРА - РЕЗУЛЬТАТ ТОВАРА В ПОЛЕ Поиск-----  */
+    --search-box-item__bg--hover: rgba(0, 0, 0, 0.048); /* фон */
+
+    /* -----КНОПКА "ВСЕ КАТАЛОГИ" В РЕЗУЛЬТАТЕ ТОВАРА ИЗ ПОЛЕ Поиск-----  */
+    --search-box-all-item__bg: red; /* фон */
+    --search-box-all-item__color: #fff; /* цвет текста */
+
+    /* -----ПУНКТЫ МЕНЮ-----  */
+    --nav-item__color: #000; /* цвет */
+    --nav-item-active__color: red; /* цвет активного пункта и ХОВЕР тоже */
+
+    /* -----ДРУГИЕ ПУНКТЫ (число товаров в корзине, выйти...)-----  */
+    --option-item__color: #000; /* цвет */
+    --option-item-active__color: red; /* цвет активного пункта и ХОВЕР тоже */
+    
+    /* -----Показать...10-53-25 (Текст и телефон)-----  */ 
+    --contact-box-text__color: red; /* цвет текста "Показать..." */
+    --contact-box-text-circle__color: green; /* цвет мигающий точка */ 
+    --contact-box-tel__color: red; /* цвет текста телефона */ 
+
+    /* -----ПОСЛЕ ХОВЕРА - Показать...10-53-25 (Текст и телефон)-----  */ 
+    --contact-box-text__color--hover: green; /* цвет текста */
+    --contact-box-tel__color--hover: green; /* цвет текста телефона */
+
+    /* -----Запросить звонок (НЕ КВАДРАТНАЯ КНОПКА)----- */
+    --contact-box-call-link__color: green; /* цвет текста */
+
+    /* -----ПОСЛЕ ХОВЕРА - Запросить звонок (НЕ КВАДРАТНАЯ КНОПКА)----- */
+    --contact-box-call-link__color--hover: red; /* цвет текста */
+
+    /* -----Войти / Зарегестрироваться----- */
+    --contact-box-login-register__color: red; /* цвет текста */
+
+    /* -----ПОСЛЕ ХОВЕРА - Войти / Зарегестрироваться----- */
+    --contact-box-login-register__color--hover: green; /* цвет текста */
+
+
+
+    /* /////// ПЕРЕМЕННЫЕ НАХОДИТСЯ В ФАЙЛЕ header-v3.css ///////  */
+
+    /* -----Меню КНОПКА-----  */
+    --menu-btn__bg: rgb(17, 17, 17); /* фон */
+    --menu-btn__borderColor: red; /* обводка */
+    --menu-btn__color: red; /* цвет текста */
+
+    /* -----ПОСЕЛ ХОВЕРА - Меню КНОПКА-----  */
+    --menu-btn__bg--hover: green; /* фон */
+    --menu-btn__borderColor--hover: blue; /* обводка */
+    --menu-btn__color--hover: red; /* цвет текста */
+
+
+
+
+    /* /////// ПЕРЕМЕННЫЕ НАХОДИТСЯ В ФАЙЛЕ header-catalog.css ///////  */
+
+    /* -----ФОН Меню и ФОН Каталога-----  */
+    --menu-box_catalog-box__bg: #434343; /* фон */
+    
+    /* -----ПОСЕ ХОВЕРА ПУНКТОВ - ПУНКТЫ Меню и ПУНКТЫ Каталога -----  */
+    --menu-box_catalog-box-ul-a__color: #fff; /* цвет текста пунктов */
+    --menu-box_catalog-box-ul-a__color--hover: #000; /* цвет текста пунктов */
+    --menu-box_catalog-box-ul-a__underlineColor--hover: #000; /* цвет подчеркивания если есть */
+
+
+
+
+    /* /////// ПЕРЕМЕННЫЕ НАХОДИТСЯ В ФАЙЛЕ header-fat-v2.css ///////  */
+
+    /* -----КНОПКА Запросить звонок-----  */
+    --c-box-fat-v2-order-call__bg: blue; /* фон */
+    --c-box-fat-v2-order-call__color: #fff; /* цвет текста */
+    --c-box-fat-v2-order-call__borderColor: green; /* обводка */
+
+    /* -----ПОСЛСЕ ХОВЕРА - КНОПКА Запросить звонок-----  */
+    --c-box-fat-v2-order-call__bg--hover: rgb(128, 0, 117); /* фон */
+    --c-box-fat-v2-order-call__color--hover: rgb(48, 255, 7); /* цвет текста */
+    --c-box-fat-v2-order-call__borderColor--hover: red; /* обводка */
+
+    /* -----НИЖНОЕ МЕНЮ-----  */
+    --h-fat-v2-bottom__bg: rgb(190, 12, 57); /* фон */
+
+    /* ПУНКТЫ В НИЖНЕМ МЕНЮ */
+    --fat-v2-nav-ul-li-a__color: #fff; /* цвет текста */
+
+    /* ПОСЕЛ ХОВЕРА - ПУНКТЫ В НИЖНЕМ МЕНЮ */
+    --fat-v2-nav-ul-li-a__bg--hover: #fff; /* фон */
+    --fat-v2-nav-ul-li-a__color--hover: red; /* цвет текста */
+
+    /* АКТИВНЫЙ - ПУНКТЫ В НИЖНЕМ МЕНЮ */
+    --fat-v2-nav-ul-li-a__color--active: rgb(0, 247, 255); /* цвет текста */
+
+    /* ВЫПАДАЮЩИЕ - ПУНКТЫ В НИЖНЕМ МЕНЮ */
+    --fat-v2-nav-ul-li-ul-li__bg: green; /* фон */
+    --fat-v2-nav-ul-li-ul-li-a__color: #fff; /* цвет текста */
+
+    /* ХОВЕР - ВЫПАДАЮЩИЕ - ПУНКТЫ В НИЖНЕМ МЕНЮ */
+    --fat-v2-nav-ul-li-ul-li-a__color--hover: red; /* цвет текста */
+    --fat-v2-nav-ul-li-ul-li__bg--hover: #fff; /* фон */
+
+    /* ДРУГИЕ ПУНКТЫ В НИЖНЕМ МЕНЮ (выйти, корзина...) */
+    --fat-v2-options-ul-li-a_color: #fff; /* цвет текста */
+
+    /* ПОСЛЕ ХОВЕРА - ДРУГИЕ ПУНКТЫ В НИЖНЕМ МЕНЮ (выйти, корзина...) */
+    --fat-v2-options-ul-li-a_color--hover: #fff; /* цвет текста */
+}
