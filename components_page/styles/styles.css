@@ -1315,7 +1315,7 @@ ul {
 
     .burger {
         position: absolute;
-        background-color: var(--header-top-icon-color, #2363D1);
+        background-color: var(--catalog-btn__burgerColor, #2363D1);
         width: 16px;
         height: 2px;
         top: 8px;
@@ -1329,7 +1329,7 @@ ul {
 
     .burger::before {
         position: absolute;
-        background-color: var(--header-top-icon-color, #2363D1);
+        background-color: var(--catalog-btn__burgerColor, #2363D1);
         width: 16px;
         height: 2px;
         top: -6px;
@@ -1339,7 +1339,7 @@ ul {
 
     .burger::after {
         position: absolute;
-        background-color: var(--header-top-icon-color, #2363D1);
+        background-color: var(--catalog-btn__burgerColor, #2363D1);
         width: 16px;
         height: 2px;
         bottom: -6px;
