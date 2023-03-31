@@ -3603,10 +3603,10 @@ body {
   .button-theme_callme {
     --color-text: var(--c-box-fat-v2-order-call__color, #2363D1);
     --color-background: var(--c-box-fat-v2-order-call__bg, #fff);
-    --color-border: var(--color-button-callme-border, #B7CBE5);
+    --color-border: var(--c-box-fat-v2-order-call__borderColor, #B7CBE5);
     --color-text-hover: var(--c-box-fat-v2-order-call__color--hover, var(--color-text));
     --color-background-hover: var(--c-box-fat-v2-order-call__bg--hover, var(--color-background));
-    --color-border-hover: var(--color-button-callme-border-hover, var(--color-border)); }
+    --color-border-hover: var(--c-box-fat-v2-order-call__borderColor--hover, var(--color-border)); }
   .button-theme_cart {
     --color-text: var(--color-button-cart-text, #fff);
     --color-background: var(--color-button-cart-background, #2363D1);
