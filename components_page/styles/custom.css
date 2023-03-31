@@ -349,6 +349,7 @@ section.feedback-form .form-control {
 }
 .catalog-inner-btn {
     background-color: var(--catalog-btn__bg, var(--color-main-dropdown-menu-bg, #333));
+    border: solid 1px var(--catalog-btn__borderColor);
 }
 .catalog-menu-item {
     height: var(--category-preview-height, 140px);

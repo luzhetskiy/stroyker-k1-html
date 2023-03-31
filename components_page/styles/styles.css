@@ -443,7 +443,7 @@ ul {
     } */
 
     .top-header {
-        background-color: var(--header-top-bg-color, #fff);
+        background-color: var(--header__bg, #fff);
     }
 
     .top-header .btn-border {
@@ -765,7 +765,7 @@ ul {
     }
 
     .header-body {
-        background: var(--header-bg-color, #000);
+        background: var(--header__bg, #000);
         position: relative;
     }
 
