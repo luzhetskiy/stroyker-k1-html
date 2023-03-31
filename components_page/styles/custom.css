@@ -1,3 +1,4 @@
+@import url(header-colors.css);
 body .notifyjs-wrapper, body .notifyjs-container {
     z-index: 555;
 }
