@@ -3601,12 +3601,12 @@ body {
     --color-background-hover: var(--color-button-muted-background-hover, var(--color-background));
     --color-border-hover: var(--color-button-muted-border-hover, var(--color-border)); }
   .button-theme_callme {
-    --color-text: var(--c-box-fat-v2-order-call__color, #2363D1);
-    --color-background: var(--c-box-fat-v2-order-call__bg, #fff);
-    --color-border: var(--c-box-fat-v2-order-call__borderColor, #B7CBE5);
-    --color-text-hover: var(--c-box-fat-v2-order-call__color--hover, var(--color-text));
-    --color-background-hover: var(--c-box-fat-v2-order-call__bg--hover, var(--color-background));
-    --color-border-hover: var(--c-box-fat-v2-order-call__borderColor--hover, var(--color-border)); }
+    --color-text: var(--contact-box-call-link__color, #2363D1);
+    --color-background: var(--contact-box-call-link__bg, #fff);
+    --color-border: var(--contact-box-call-link__borderColor, #B7CBE5);
+    --color-text-hover: var(--contact-box-call-link__color--hover, var(--color-text));
+    --color-background-hover: var(--contact-box-call-link__bg--hover, var(--color-background));
+    --color-border-hover: var(--contact-box-call-link__borderColor--hover, var(--color-border)); }
   .button-theme_cart {
     --color-text: var(--color-button-cart-text, #fff);
     --color-background: var(--color-button-cart-background, #2363D1);
