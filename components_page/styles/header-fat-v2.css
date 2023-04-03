@@ -1,3 +1,5 @@
+@import url(header-colors.css);
+
 /* FAT V2  */
 
 @media only screen and (min-width: 991px) {
@@ -35,24 +37,25 @@
 }
 
 .__header .c-box-fat-v2 .order-call{
-    border: 1px solid #B7CBE5;
+    border: 1px solid var(--contact-box-call-link__borderColor);
     padding: 12px 14px;
     max-height: 48px;
     max-width: 160px;
     width: 100%;
     text-align: center;
     display: inline-block;
-    color: #1C52AC;
+    background-color: var(--contact-box-call-link__bg);
+    color: var(--contact-box-call-link__color);
 }
 
 .__header .c-box-fat-v2 .order-call:hover{
-    background-color: #1C52AC;
-    border-color: #1C52AC;
-    color: #fff;
+    background-color: var(--contact-box-call-link__bg--hover);
+    color: var(--contact-box-call-link__color--hover);
+    border-color: var(--contact-box-call-link__borderColor--hover);
 }
 
 .__h-fat-v2-bottom{
-    background: #000000;
+    background: var(--h-fat-v2-bottom__bg);
     padding-top: 0px;
     padding-bottom: 0px;
     display: flex;
@@ -94,12 +97,20 @@
 .__fat-v2-options ul li a{
     font-size: 14px;
     line-height: 15px;
-    color: #fff;
+    color: var(--option-item__color);
     font-family: var(--rb);
     transition: 0.2s;
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+.__fat-v2-options ul li .header-account-prop{
+    color: var(--accounts-item__color);
+}
+
+.__fat-v2-options ul li .header-account-prop:hover{
+    color: var(--accounts-item__color--hover);
 }
 
 .__fat-v2-options ul li img{
@@ -108,7 +119,7 @@
 
 .__fat-v2-options ul li a.active,
 .__fat-v2-options ul li a:hover{
-    color: #1C52AC;
+    color: var(--option-item__color--active--hover);
     text-decoration: underline;
 }
 
@@ -128,11 +139,10 @@
 }
 
 .__fat-v2-nav ul li a{
-    color: #fff;
+    color: var(--fat-v2-nav-ul-li-a__color);
     font-family: var(--rr);
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
     transition: 0.2s;
     display: flex;
     flex-wrap: wrap;
@@ -147,13 +157,17 @@
 
 .__fat-v2-nav ul li a.active{
     text-decoration: underline;
-    color: #1C52AC;
+    color: var(--fat-v2-nav-ul-li-a__color--active);
     text-underline-position: under;
 }
 
 .__fat-v2-nav ul li:hover{
-    background: #474747;
+    background: var(--fat-v2-nav-ul-li-a__bg--hover);
 
+}
+
+.__fat-v2-nav ul li:hover a{
+    color: var(--fat-v2-nav-ul-li-a__color--hover);
 }
 
 .__fat-v2-nav ul li:hover > ul{
@@ -166,7 +180,7 @@
 }
 
 .__fat-v2-nav ul li a:hover{
-    color: #1C52AC;
+    color: var(--fat-v2-nav-ul-li-a__color--hover);
 }
 
 .__fat-v2-nav ul li ul{
@@ -188,7 +202,7 @@
 .__fat-v2-nav ul li ul li{
     margin-right: 0;
     height: auto;
-    background: #474747;
+    background: var(--fat-v2-nav-ul-li-ul-li__bg);
     transition: 0.2s;
 }
 
@@ -196,10 +210,16 @@
     padding: 12px 15px 12px 15px;
     display: inline-block;
     width: 100%;
+    color: var(--fat-v2-nav-ul-li-ul-li-a__color)!important;
+}
+
+.__fat-v2-nav ul li ul li:hover{
+    background: var(--fat-v2-nav-ul-li-ul-li__bg--hover);
 }
 
 .__fat-v2-nav ul li ul li:hover > a{
-    background: #323232;
+    background: var(--fat-v2-nav-ul-li-ul-li__bg--hover);
+    color: var(--fat-v2-nav-ul-li-ul-li-a__color--hover)!important;
 }
 
 

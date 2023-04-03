@@ -1,3 +1,4 @@
+@import url(header-colors.css);
 
 /* V3 МЕНЮ КНОПКА  */
 .__header .v3-variant{
@@ -36,7 +37,7 @@
 
 .__header .menu-box{
     width: 353px;
-    background: #474747;
+    background: var(--menu-box_catalog-box__bg);
     padding-top: 33px;
     padding-bottom: 20px;
     padding-left: 58px;
@@ -76,7 +77,7 @@
     font-family: var(--rr);
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
+    color: var(--menu-box_catalog-box-ul-a__color);
     display: inline-block;
     width: 100%;
     transition: 0.2s;
@@ -85,8 +86,9 @@
 }
 
 .__header .menu-btn{
-    background: rgb(17, 17, 17);
-    border: 1px solid #7C8994;
+    background: var(--menu-btn__bg);
+    border: 1px solid var(--menu-btn__borderColor);
+    color: var(--menu-btn__color);
     position: relative;
     text-align: center;
     margin: 0;
@@ -118,7 +120,8 @@
 
 
 .__header .menu-btn:hover{
-    background: #474747;
+    background: var(--menu-btn__bg--hover);
+    border-color: var(--menu-btn__borderColor--hover);
 }
 
 .__header .menu-btn span{
@@ -135,7 +138,8 @@
 }
 
 .__header .menu-btn.toggled{
-    background: #474747;
+    background: var(--menu-btn__bg--hover);
+    border-color: var(--menu-btn__borderColor--hover);
 }
 
 .__header .menu-btn.toggled img{

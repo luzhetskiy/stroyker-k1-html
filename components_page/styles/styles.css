@@ -1,3 +1,4 @@
+@import url(header-colors.css);
 
 @font-face {
     font-display: swap;
@@ -442,7 +443,7 @@ ul {
     } */
 
     .top-header {
-        background-color: var(--header-top-bg-color, #fff);
+        background-color: var(--header__bg, #fff);
     }
 
     .top-header .btn-border {
@@ -546,7 +547,7 @@ ul {
         font-family: "Golos", sans-serif;
         font-size: 14px;
         opacity: 0.75;
-        color: var(--header-top-menu-font-color, #333);
+        color: var(--nav-item__color, #333);
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s;
@@ -559,7 +560,7 @@ ul {
     }
 
     .main-menu a:hover {
-        color: var(--header-top-menu-font-hover-color, #2363D1);
+        color: var(--nav-item__color--hover, #2363D1);
         opacity: 1;
         text-decoration: underline;
     }
@@ -764,7 +765,7 @@ ul {
     }
 
     .header-body {
-        background: var(--header-bg-color, #000);
+        background: var(--h-fat-v2-bottom__bg, #000);
         position: relative;
     }
 
@@ -837,12 +838,12 @@ ul {
         font-family: "Golos";
         width: calc(100% - 80px);
         height: 48px;
-        background-color: var(--search-field-bg-color, #222);
-        border: 1px solid var(--search-field-border-color, #333);
+        background-color: var(--search-box__bg, #222);
+        border: 1px solid var(--search-box__borderColor, #333);
         border-right: 0;
         font-size: 14px;
         line-height: 40px;
-        color: var(--search-field-font-color, #fff);
+        color: var(--search-box__color, #fff);
         padding: 0 15px;
     }
 
@@ -883,7 +884,7 @@ ul {
         width: 80px;
         height: 48px;
         border-radius: 0 2px 2px 0;
-        background-color: var(--search-field-border-color, rgba(255, 255, 255, 0.1));
+        background-color: var(--search-box-submit__bg, rgba(255, 255, 255, 0.1));
         background-size: 12px 12px;
         border: none;
         cursor: pointer;
@@ -1061,7 +1062,7 @@ ul {
     .header-user__link {
         font-size: 11px;
         position: relative;
-        color: var(--main-elements-color, #2363D1);
+        color: var(--accounts-item__color, #2363D1);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1171,9 +1172,9 @@ ul {
         height: 24px;
         text-align: center;
         font-size: 11px;
-        color: #fff;
+        color: var(--option-item__color, #fff);
         border-radius: 50%;
-        background: var(--main-elements-color, #2363D1);
+        background: var(--option-item__bg, #2363D1);
     }
 
     @media (max-width: 767px) {
@@ -1203,6 +1204,10 @@ ul {
         position: relative;
         padding-left: 35px;
         margin-left: 25px;
+    }
+
+    .header-cart span{
+        background: var(--option-item__bg, #2363D1);
     }
 
     @media (max-width: 767px) {
@@ -1256,9 +1261,8 @@ ul {
         -ms-flex-align: center;
         align-items: center;
         font-size: 11px;
-        color: #fff;
+        color: var(--option-item__color);
         border-radius: 50%;
-        background: var(--main-elements-color, #2363D1);
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s;
@@ -1314,7 +1318,7 @@ ul {
 
     .burger {
         position: absolute;
-        background-color: var(--header-top-icon-color, #2363D1);
+        background-color: var(--catalog-btn__burgerColor, #2363D1);
         width: 16px;
         height: 2px;
         top: 8px;
@@ -1328,7 +1332,7 @@ ul {
 
     .burger::before {
         position: absolute;
-        background-color: var(--header-top-icon-color, #2363D1);
+        background-color: var(--catalog-btn__burgerColor, #2363D1);
         width: 16px;
         height: 2px;
         top: -6px;
@@ -1338,7 +1342,7 @@ ul {
 
     .burger::after {
         position: absolute;
-        background-color: var(--header-top-icon-color, #2363D1);
+        background-color: var(--catalog-btn__burgerColor, #2363D1);
         width: 16px;
         height: 2px;
         bottom: -6px;
@@ -2001,11 +2005,11 @@ ul {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        background-color: var(--search-field-border-color, #333);
+        background-color: var(--catalog-btn__bg, #333);
         border-radius: 2px;
         font-size: 14px;
         line-height: 0px;
-        color: var(--header-buttons-font-color, #FFF);
+        color: var(--catalog-btn__color, #FFF);
         cursor: pointer;
         width: 220px;
         height: 48px;
