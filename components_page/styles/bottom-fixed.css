@@ -3,14 +3,14 @@
 .header--bottom-mob.bottom-fixed{
     display: flex;
     height: 40px;
-    background-color: #000;
+    background-color: var(--mob-header_bottom__bg);
     position: fixed;
     top: auto;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 998;
-    border-top: 1px solid rgb(32, 32, 32);
+    border-top: 1px solid var(--mob-header_bottom__borderColor);
     align-items: center;
 }
 

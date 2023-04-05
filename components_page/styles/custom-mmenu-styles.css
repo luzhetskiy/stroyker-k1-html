@@ -1,3 +1,5 @@
+@import url(header-mobile-colors.css);
+
 
 @media only screen and (min-width: 991px) {
     #my-menu{
@@ -42,6 +44,7 @@
 .mm-listitem a{
     width: 100%;
     display: block;
+    color: var(--mm-listitem__color)!important;
 }
 
 #my-button{
@@ -52,6 +55,10 @@
 .mm-menu_offcanvas{
     width: 100%;
     max-width: 90%;
+}
+
+.mm-panels{
+    background-color: var(--mm-panels-mobile-menu__bg, #e7e7e7)!important;
 }
 
 .mm-panel #my-button-close{
@@ -66,17 +73,20 @@
         padding: 0;
         background: none;
 }
+.mm-panel #my-button-close svg rect {
+    fill: var(--mm-navbar-button-icons__color);
+}
 .mm-navbar{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #000;
+    background-color: var(--mm-navbar__bg);
     height: 60px;
     color: #fff;
     padding-left: 15px;
 }
 .mm-navbar__title{
     font-size: 16px;
-    color: #fff!important;
+    color: var(--mm-navbar-title__color)!important;
     max-width: 90%;
     margin: auto;
     font-family: var(--rb);
@@ -91,6 +101,7 @@
 }
 .mm-btn_next:after{
     right: 19px;
+    border-color: var(--mm-listitem-button-icons__color)!important;
 }
 .mm-listview{
     margin-top: 5px !important;
@@ -105,7 +116,7 @@
     transform: translate3d(100vw,0,0);
 }
 .mm-listitem{
-    background-color: #fff;
+    background-color: var(--mm-listitem__bg);
     padding: 20px 24px 20px 20px;
     font-size: 13px;
     color: #1E2632;
@@ -136,6 +147,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    color: var(--mm-login__color, #000)!important;
 
 }
 
@@ -153,6 +165,7 @@
     padding: 0;
     padding-left: 20px;
     padding-right: 20px;
+
 }
 
 .mm-other-options li{
@@ -166,6 +179,7 @@
 .mm-other-options a{
     display: flex;
     align-items: center;
+    color: var(--mm-other-options__color, #000)!important;
 }
 
 .mm-other-options a img{
@@ -175,8 +189,8 @@
 
 .mm-menu .mm-btn::after{
     content: "";
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
+    border-top: 2px solid var(--mm-navbar-button-icons__color);
+    border-left: 2px solid var(--mm-navbar-button-icons__color);
     display: block;
     width: 8px;
     height: 8px;

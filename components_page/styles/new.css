@@ -5768,7 +5768,7 @@ header {
     position: absolute;
     right: -25px;
     top: 5px;
-    color: var(--main-elements-color); }
+    color: var(--mm-listitem-button-icons__color); }
 
 .mobile-ul li .submenu li a .icon {
   transform: rotate(-90deg);

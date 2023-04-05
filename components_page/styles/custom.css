@@ -1,3 +1,4 @@
+@import url(header-colors.css);
 body .notifyjs-wrapper, body .notifyjs-container {
     z-index: 555;
 }
@@ -341,13 +342,14 @@ section.feedback-form .form-control {
 }
 
 .header-search button {
-    background-color: var(--search-field-btn-color, var(--search-field-border-color, #ffffff1a));
+    background-color: var(--search-box-submit__bg, var(--search-field-border-color, #ffffff1a));
 }
 .section-dark.feedback-form {
     background-color: #F5F5F5;
 }
 .catalog-inner-btn {
-    background-color: var(--catalog-menu-button_bg, var(--color-main-dropdown-menu-bg, #333));
+    background-color: var(--catalog-btn__bg, var(--color-main-dropdown-menu-bg, #333));
+    border: solid 1px var(--catalog-btn__borderColor);
 }
 .catalog-menu-item {
     height: var(--category-preview-height, 140px);
