@@ -765,7 +765,7 @@ ul {
     }
 
     .header-body {
-        background: var(--h-fat-v2-bottom__bg, #000);
+        background: var(--header-bottom__bg, #000);
         position: relative;
     }
 

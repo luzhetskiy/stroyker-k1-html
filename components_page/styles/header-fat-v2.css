@@ -55,7 +55,7 @@
 }
 
 .__h-fat-v2-bottom{
-    background: var(--h-fat-v2-bottom__bg);
+    background: var(--header-bottom__bg);
     padding-top: 0px;
     padding-bottom: 0px;
     display: flex;
