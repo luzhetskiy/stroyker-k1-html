@@ -1,3 +1,4 @@
+@import url(header-colors.css);
 .d-inline {
   display: inline !important; }
 
@@ -3600,12 +3601,12 @@ body {
     --color-background-hover: var(--color-button-muted-background-hover, var(--color-background));
     --color-border-hover: var(--color-button-muted-border-hover, var(--color-border)); }
   .button-theme_callme {
-    --color-text: var(--color-button-callme-text, #2363D1);
-    --color-background: var(--color-button-callme-background, #fff);
-    --color-border: var(--color-button-callme-border, #B7CBE5);
-    --color-text-hover: var(--color-button-callme-text-hover, var(--color-text));
-    --color-background-hover: var(--color-button-callme-background-hover, var(--color-background));
-    --color-border-hover: var(--color-button-callme-border-hover, var(--color-border)); }
+    --color-text: var(--contact-box-call-link__color, #2363D1);
+    --color-background: var(--contact-box-call-link__bg, #fff);
+    --color-border: var(--contact-box-call-link__borderColor, #B7CBE5);
+    --color-text-hover: var(--contact-box-call-link__color--hover, var(--color-text));
+    --color-background-hover: var(--contact-box-call-link__bg--hover, var(--color-background));
+    --color-border-hover: var(--contact-box-call-link__borderColor--hover, var(--color-border)); }
   .button-theme_cart {
     --color-text: var(--color-button-cart-text, #fff);
     --color-background: var(--color-button-cart-background, #2363D1);
@@ -3680,6 +3681,23 @@ body {
     transition: border-color 0.15s ease-out, background-color 0.15s ease-out; }
   .slick-dots .slick-active button {
     background-color: var(--main-elements-color, #2363D1); }
+
+
+  @media (max-width: 575.98px) {
+    .slider-constructor:not([data-no-arrows]){
+      padding-top: 30px;
+    }
+
+    .slider-constructor:not([data-no-arrows]) .slick-dots{
+      position: absolute;
+      top: 0;
+      text-align: right;
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 0;
+      padding-right: 30px;
+    }
+}
 
 .slider-constructor {
   display: flex;
@@ -3995,7 +4013,7 @@ body {
     font-weight: var(--font-weight);
     font-size: var(--font-size);
     line-height: var(--line-height);
-    color: var(--color);
+    color: var(--contact-box-text__color);
     position: relative;
     cursor: pointer;
     white-space: nowrap;
@@ -4016,7 +4034,7 @@ body {
       border-radius: 50%;
       border-width: 2px;
       border-style: solid;
-      border-color: currentColor; }
+      border-color: var(--contact-box-text-circle__color); }
     .header-phones__toggle::after {
       width: 5px;
       height: 5px;
@@ -4031,7 +4049,7 @@ body {
     font-weight: var(--font-weight);
     font-size: var(--font-size);
     line-height: var(--line-height);
-    color: var(--color);
+    color: var(--contact-box-tel__color);
     display: block;
     text-decoration: none;
     transition: color 0.15s ease-out; }
@@ -4049,7 +4067,7 @@ body {
   0% {
     color: #fff; }
   80% {
-    color: var(--main-elements-color, #2363D1); }
+    color: var(--contact-box-text-circle__color, #2363D1); }
   100% {
     color: #fff; } }
 
@@ -5767,7 +5785,7 @@ header {
     position: absolute;
     right: -25px;
     top: 5px;
-    color: var(--main-elements-color); }
+    color: var(--mm-listitem-button-icons__color); }
 
 .mobile-ul li .submenu li a .icon {
   transform: rotate(-90deg);
