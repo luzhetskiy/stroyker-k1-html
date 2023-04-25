@@ -1,4 +1,3 @@
-@import url(header-colors.css);
 
 @font-face {
     font-display: swap;
@@ -111,14 +110,11 @@ ul {
     body {
         font-family: "Golos", sans-serif;
         width: 100%;
+        height: 100%;
         -webkit-overflow-scrolling: touch;
         color: #333;
         background: #fff;
         font-weight: normal;
-        min-height: 100vh;
-        height: auto;
-        display: flex;
-        flex-direction: column;
     }
 
     .center {
@@ -446,7 +442,7 @@ ul {
     } */
 
     .top-header {
-        background-color: var(--header__bg, #fff);
+        background-color: var(--header-top-bg-color, #fff);
     }
 
     .top-header .btn-border {
@@ -550,7 +546,7 @@ ul {
         font-family: "Golos", sans-serif;
         font-size: 14px;
         opacity: 0.75;
-        color: var(--nav-item__color, #333);
+        color: var(--header-top-menu-font-color, #333);
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s;
@@ -563,7 +559,7 @@ ul {
     }
 
     .main-menu a:hover {
-        color: var(--nav-item__color--hover, #2363D1);
+        color: var(--header-top-menu-font-hover-color, #2363D1);
         opacity: 1;
         text-decoration: underline;
     }
@@ -768,7 +764,7 @@ ul {
     }
 
     .header-body {
-        background: var(--header-bottom__bg, #000);
+        background: var(--header-bg-color, #000);
         position: relative;
     }
 
@@ -841,12 +837,12 @@ ul {
         font-family: "Golos";
         width: calc(100% - 80px);
         height: 48px;
-        background-color: var(--search-box__bg, #222);
-        border: 1px solid var(--search-box__borderColor, #333);
+        background-color: var(--search-field-bg-color, #222);
+        border: 1px solid var(--search-field-border-color, #333);
         border-right: 0;
         font-size: 14px;
         line-height: 40px;
-        color: var(--search-box__color, #fff);
+        color: var(--search-field-font-color, #fff);
         padding: 0 15px;
     }
 
@@ -887,7 +883,7 @@ ul {
         width: 80px;
         height: 48px;
         border-radius: 0 2px 2px 0;
-        background-color: var(--search-box-submit__bg, rgba(255, 255, 255, 0.1));
+        background-color: var(--search-field-border-color, rgba(255, 255, 255, 0.1));
         background-size: 12px 12px;
         border: none;
         cursor: pointer;
@@ -1065,7 +1061,7 @@ ul {
     .header-user__link {
         font-size: 11px;
         position: relative;
-        color: var(--accounts-item__color, #2363D1);
+        color: var(--main-elements-color, #2363D1);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1175,9 +1171,9 @@ ul {
         height: 24px;
         text-align: center;
         font-size: 11px;
-        color: var(--option-item__color, #fff);
+        color: #fff;
         border-radius: 50%;
-        background: var(--option-item__bg, #2363D1);
+        background: var(--main-elements-color, #2363D1);
     }
 
     @media (max-width: 767px) {
@@ -1207,10 +1203,6 @@ ul {
         position: relative;
         padding-left: 35px;
         margin-left: 25px;
-    }
-
-    .header-cart span{
-        background: var(--option-item__bg, #2363D1);
     }
 
     @media (max-width: 767px) {
@@ -1264,8 +1256,9 @@ ul {
         -ms-flex-align: center;
         align-items: center;
         font-size: 11px;
-        color: var(--option-item__color);
+        color: #fff;
         border-radius: 50%;
+        background: var(--main-elements-color, #2363D1);
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s;
@@ -1321,7 +1314,7 @@ ul {
 
     .burger {
         position: absolute;
-        background-color: var(--catalog-btn__burgerColor, #2363D1);
+        background-color: var(--header-top-icon-color, #2363D1);
         width: 16px;
         height: 2px;
         top: 8px;
@@ -1335,7 +1328,7 @@ ul {
 
     .burger::before {
         position: absolute;
-        background-color: var(--catalog-btn__burgerColor, #2363D1);
+        background-color: var(--header-top-icon-color, #2363D1);
         width: 16px;
         height: 2px;
         top: -6px;
@@ -1345,7 +1338,7 @@ ul {
 
     .burger::after {
         position: absolute;
-        background-color: var(--catalog-btn__burgerColor, #2363D1);
+        background-color: var(--header-top-icon-color, #2363D1);
         width: 16px;
         height: 2px;
         bottom: -6px;
@@ -1386,29 +1379,9 @@ ul {
         top: 60px;
         left: 0;
         width: 100%;
-        background: var(--mm-panels-mobile-menu__bg, #F5F5F5);
+        background: #F5F5F5;
         z-index: 99;
         padding: 20px 30px;
-    }
-
-    .mobile-menu .header-user__link{
-        color: var(--mm-login__color, #000);
-    }
-
-    .mobile-menu .header-user__link .icon-arrow{
-        color: var(--register-arrow__color, #000);
-    }
-
-    .mobile-menu .mobile-btn .button-theme_primary{
-        color: var(--mob-contact-box-order-call__color, #fff)!important;
-        background-color: var(--mob-contact-box-order-call__bg, #167708)!important;
-        border-color: var(--mob-contact-box-order-call__borderColor, #167708)!important;
-    }
-
-    .mobile-menu .mobile-btn .button-theme_primary:hover{
-        color: var(--mob-contact-box-order-call__color--hover, #fff)!important;
-        background-color: var(--mob-contact-box-order-call__bg--hover, #167708)!important;
-        border-color: var(--mob-contact-box-order-call__borderColor--hover, #167708)!important;
     }
 
     @media (max-width: 991px) {
@@ -1423,25 +1396,7 @@ ul {
     }
 
     .mobile-menu .header-search input {
-        color: var(--mob-search-box__color, #333) !important;
-        border: 1px solid var(--mob-search-box__borderColor);
-        border-right: none;
-    }
-
-    .mobile-menu .header-search input::placeholder{
-        color: var(--mob-search-box__placeholderColor);
-    }
-
-    .mobile-menu .header-search button{
-        margin-left: -1px;
-        margin-right: -1px;
-        background-color: var(--mob-search-box-submit__bg);
-        border: solid 1px var(--mob-search-box-submit__borderColor);
-    }
-
-    .mobile-menu .header-search button:hover{
-        background-color: var(--mob-search-box-submit__bg--hover);
-        border: solid 1px var(--mob-search-box-submit__borderColor--hover);
+        color: #333 !important;
     }
 
     .mobile-ul {
@@ -1469,7 +1424,7 @@ ul {
         display: none;
         width: calc(100% + 40px);
         margin: 15px -20px;
-        background: var(--mm-listitem__bg, #D9D9DE);
+        background: #D9D9DE;
         padding: 15px 0;
     }
 
@@ -1485,7 +1440,7 @@ ul {
         cursor: pointer;
         font-size: 18px;
         display: block;
-        color: var(--mm-listitem__color, #333);
+        color: #333;
         padding: 9px 40px;
     }
 
@@ -1501,7 +1456,7 @@ ul {
         position: relative;
         font-size: 18px;
         line-height: 24px;
-        color: var(--mm-listitem__color);
+        color: #333333;
     }
 
     .mobile-ul li.catalog-opened a:before {
@@ -1535,7 +1490,6 @@ ul {
         line-height: 28px;
         color: var(--main-elements-hover-color, #1C52AC);
     }
-    
 
     .btn-center--padding {
         padding-top: 15px;
@@ -2047,11 +2001,11 @@ ul {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        background-color: var(--catalog-btn__bg, #333);
+        background-color: var(--search-field-border-color, #333);
         border-radius: 2px;
         font-size: 14px;
         line-height: 0px;
-        color: var(--catalog-btn__color, #FFF);
+        color: var(--header-buttons-font-color, #FFF);
         cursor: pointer;
         width: 220px;
         height: 48px;
@@ -5755,7 +5709,6 @@ ul {
                           background: var(--footer-bg-color, #333);
                           padding: 40px 0 0px 0;
                           position: relative;
-                          margin-top: auto;
                       }
 
                       @media (max-width: 767px) {
