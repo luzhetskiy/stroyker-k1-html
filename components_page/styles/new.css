@@ -3681,6 +3681,22 @@ body {
   .slick-dots .slick-active button {
     background-color: var(--main-elements-color, #2363D1); }
 
+ @media (max-width: 575.98px) {
+    .slider-constructor:not([data-no-arrows]){
+      padding-top: 30px;
+    }
+
+    .slider-constructor:not([data-no-arrows]) .slick-dots{
+      position: absolute;
+      top: 0;
+      text-align: right;
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 0;
+      padding-right: 30px;
+    }
+}
+
 .slider-constructor {
   display: flex;
   opacity: 0;
