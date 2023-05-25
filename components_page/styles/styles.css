@@ -337,6 +337,12 @@ ul {
         margin: 0 7px;
     }
 
+    .pagination span.active{
+        border-color: #333333;
+        border-width: 2px;
+        font-weight: bold;
+    }
+
     .pagination span a {
         color: #333;
         position: absolute;
