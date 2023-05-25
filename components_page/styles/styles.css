@@ -336,25 +336,7 @@ ul {
     }
 
 
-    @media (max-width: 767px) {
-        .pagination span {
-            margin: 0 2px;
-            font-size: 14px;
-            width: 30px;
-            height: 30px;
-        }
 
-        .pagination .prev,
-        .pagination .next {
-            width: 30px!important;
-            height: 30px!important;
-        }
-        .pagination .prev:before, .pagination .next:before {
-            width: 8px!important;
-            height: 8px!important;
-            border-width: 1px!important;
-        }
-    }
 
     .pagination span a {
         color: #333;
@@ -412,6 +394,26 @@ ul {
     .pagination .next:hover {
         /* border-color: var(--main-elements-color, #2363D1); */
         background-color: #cacaca;
+    }
+
+    @media (max-width: 767px) {
+        .pagination span {
+            margin: 0 2px;
+            font-size: 14px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .pagination .prev,
+        .pagination .next {
+            width: 30px;
+            height: 30px;
+        }
+        .pagination .prev:before, .pagination .next:before {
+            width: 8px;
+            height: 8px;
+            border-width: 1px;
+        }
     }
 
     p {
