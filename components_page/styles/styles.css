@@ -333,10 +333,9 @@ ul {
 
     .pagination span.dot{
         border: none;
+        width: auto;
+        margin: 0 7px;
     }
-
-
-
 
     .pagination span a {
         color: #333;
