@@ -6009,6 +6009,65 @@ ul {
                           }
                       }
 
+                      .footer-right .social-links{
+                        display: flex;
+                        justify-content: space-around;
+                        width: 100%;
+                        margin-top: 15px;
+                      }
+
+                      .footer-right .social-links a{
+                        display: inline-block;
+                        position: relative; 
+                        z-index: 1;
+                        width: 133px;
+                        height: 47px;
+                        background: rgba(176, 176, 176, 0.45);
+                        border-radius: 5px;
+                      }
+
+
+                      .footer-right .social-links a img + img{
+                        opacity: 0;
+                      }
+
+                      .footer-right .social-links span{
+                        display: inline-block;
+                      }
+
+                      .footer-right .social-links a img{
+                        transition: 0.2s;
+                        position: absolute;
+                      }
+
+                      .footer-right .social-links a:hover img{
+                        opacity: 0;
+                      }
+
+                      .footer-right .social-links a:hover img + img{
+                        opacity: 1;
+                      }
+
+                      .footer-right .social-links a + a{
+                        margin-left: 10px;
+                      }
+
+                      .footer-right .social-links img{
+                        max-width: 100%;
+                      }
+
+                      @media (max-width: 991px) {
+                        .footer-right .social-links a{
+                            height: 38px;
+                        }
+                      }
+
+                      @media (max-width: 767px) {
+                        .footer-right .social-links a{
+                            height: 47px;
+                        }
+                      }
+
                       .footer-subscribe {
                           display: -webkit-box;
                           display: -ms-flexbox;
