@@ -11113,9 +11113,18 @@ canvas {
   color: #000000;
 }
 
+@media (max-width: 1280px) {
+  .shopping-cart-item__delete {
+    margin-right: 20px;
+  }
+  .shopping-cart-item__name {
+    width: 20%;
+  }
+}
+
 @media (max-width: 767px) {
   .shopping-cart-item__name {
-    width: calc(100% - 30px);
+    width: calc(100% - 120px);
     margin-bottom: 15px;
   }
 }
@@ -11174,14 +11183,6 @@ canvas {
   object-fit: contain;
 }
 
-@media (max-width: 1280px) {
-  .shopping-cart-item__delete {
-    margin-right: 20px;
-  }
-  .shopping-cart-item__name {
-    width: 20%;
-  }
-}
 
 @media (max-width: 992px) {
   .shopping-cart-item__delete {
