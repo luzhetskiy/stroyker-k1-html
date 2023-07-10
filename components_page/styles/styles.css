@@ -11067,15 +11067,13 @@ canvas {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 @media (max-width: 767px) {
   .shopping-cart-item {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -11111,6 +11109,7 @@ canvas {
   font-size: 12px;
   line-height: 16px;
   color: #000000;
+  max-width: 50%;
 }
 
 @media (max-width: 1280px) {
@@ -11126,6 +11125,7 @@ canvas {
   .shopping-cart-item__name {
     width: calc(100% - 120px);
     margin-bottom: 15px;
+    margin-left: auto;
   }
 }
 
@@ -11141,12 +11141,15 @@ canvas {
   line-height: 20px;
   color: #000000;
   text-align: right;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 @media (max-width: 767px) {
   .shopping-cart-item__cost {
     text-align: left;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
