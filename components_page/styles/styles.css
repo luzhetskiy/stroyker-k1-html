@@ -11110,6 +11110,8 @@ canvas {
   line-height: 16px;
   color: #000000;
   max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 1280px) {
@@ -11130,6 +11132,10 @@ canvas {
   }
 }
 
+.shopping-cart-item__numbers {
+  min-width: 116px;
+}
+
 .shopping-cart-item__name span {
   font-size: 9px;
   line-height: 20px;
@@ -11144,6 +11150,9 @@ canvas {
   text-align: right;
   margin-left: auto;
   margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 767px) {
@@ -11164,6 +11173,9 @@ canvas {
   color: #000000;
   text-align: right;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 767px) {
