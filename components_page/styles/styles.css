@@ -5859,8 +5859,8 @@ footer {
 
 @media (max-width: 1100px) {
   .footer-content__menu {
-    width: calc(100% - 580px);
-    margin-left: -20px;
+    width: calc(100% - 480px);
+    margin-left: 0;
   }
 }
 
