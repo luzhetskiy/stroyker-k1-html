@@ -5857,7 +5857,7 @@ footer {
   margin-left: -46px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
   .footer-content__menu {
     width: calc(100% - 480px);
     margin-left: 0;
@@ -5928,10 +5928,6 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-}
-
-.footer-content__column:last-child {
-  margin-right: -18px;
 }
 
 .footer-content__column--lg {
