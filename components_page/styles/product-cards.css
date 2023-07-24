@@ -282,6 +282,7 @@
 @media (max-width: 767px) {
   .product-item_v1_new {
     height: 132px;
+    padding-bottom: 0;
   }
   .product-item_v1_new .product-item__content-top {
     padding-bottom: 10px;
