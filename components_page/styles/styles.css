@@ -15252,7 +15252,6 @@ canvas {
   }
 }
 
-
 .product-item_v1_01_wide {
   border: 1px solid var(--color-card-border, #d9d9de);
   height: 100%;
@@ -15716,6 +15715,12 @@ canvas {
 }
 .product-card-v2 .product-card-v2__content {
   padding: 15px;
+}
+.product-card-v2__link {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 .product-comparison_new {
   max-width: 52px;
