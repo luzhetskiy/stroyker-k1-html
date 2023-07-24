@@ -481,6 +481,37 @@
 .product-card-v2 .product-card-v2__content {
   padding: 15px;
 }
+.button_disabled__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  color: var(--color-button-muted-text, #fff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 14px;
+}
+.button_disabled__title {
+  font-size: 14px;
+  line-height: 18px;
+}
+.button_disabled__sub-title,
+.button_disabled__title {
+  color: var(--color-button-muted-text, #fff);
+  font-weight: 400;
+  text-align: left;
+}
+.button_disabled__sub-title {
+  font-size: 10px;
+  line-height: 12px;
+}
+.product-card-v2 .button_disabled {
+  width: 100%;
+}
+.product-card-v2__buttons > * {
+  height: 48px;
+}
 .product-card-v2__buttons {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -489,10 +520,6 @@
   -ms-flex-direction: row;
   flex-direction: row;
   justify-content: flex-start;
-}
-.button_disabled__text {
-  color: var(--color-button-muted-text, #fff);
-  font-size: 14px;
 }
 .shopping-cart-product {
   gap: 7px;
@@ -512,7 +539,6 @@
 .shopping-cart-btn {
   background-image: none;
   border-radius: 2px;
-  gap: 7px;
   margin: 0;
   padding: 0 14px;
   width: auto;
@@ -521,16 +547,51 @@
   height: auto;
   min-width: 22px;
 }
-.shopping-cart-btn__text {
+.shopping-cart-btn__sub-title,
+.shopping-cart-btn__title {
   color: var(--color-button-cart-text, #fff);
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
+  margin-left: 7px;
+}
+.shopping-cart-btn__sub-title:empty,
+.shopping-cart-btn__title:empty {
+  margin-left: 0;
+}
+.shopping-cart-btn__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.shopping-cart-btn__title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.shopping-cart-btn__sub-title {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
 }
 @media (max-width: 767px) {
   .shopping-cart-btn__text {
     font-size: 14px;
   }
+}
+.product-card-v2 .shopping-cart-btn {
+  width: 100%;
+}
+.product-card-v2 .shopping-cart-btn__sub-title,
+.product-card-v2 .shopping-cart-btn__title {
+  margin-left: 11px;
+  white-space: nowrap;
 }
 .product-favorite {
   -webkit-box-align: center;
@@ -556,6 +617,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+.product-favorite__text:empty {
+  margin-left: -7px;
 }
 .product-favorite__icon {
   height: auto;
