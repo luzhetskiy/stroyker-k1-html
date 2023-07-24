@@ -15516,12 +15516,22 @@ canvas {
 }
 .product-item_v1_new {
   border: 1px solid var(--color-card-border, #d9d9de);
+  padding-bottom: 50px;
 }
 .product-item_v1_new .product-item__btns {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   gap: 7px;
   justify-content: flex-start;
+}
+.product-item_v1_new .product-item__content-bottom {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.product-item_v1_new .product-item__content-top,
+.product-item_v1_new .product-item__link {
+  height: auto;
 }
 @media (max-width: 767px) {
   .product-item_v1_new {
