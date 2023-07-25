@@ -3583,22 +3583,22 @@ body {
     --color-background: var(--color-button-primary-background, #2363D1);
     --color-border: var(--color-button-primary-border, #2363D1);
     --color-text-hover: var(--color-button-primary-text-hover, var(--color-text));
-    --color-background-hover: var(--color-button-primary-background-hover, var(--color-background));
-    --color-border-hover: var(--color-button-primary-border-hover, var(--color-border)); }
+    --color-background-hover: var(--color-button-primary-background-hover, #2363D1);
+    --color-border-hover: var(--color-button-primary-border-hover, #2363D1); }
   .button-theme_secondary {
     --color-text: var(--color-button-secondary-text, #2363D1);
     --color-background: var(--color-button-secondary-background, #fff);
     --color-border: var(--color-button-secondary-border, #B7CBE5);
-    --color-text-hover: var(--color-button-secondary-text-hover, var(--color-text));
-    --color-background-hover: var(--color-button-secondary-background-hover, var(--color-background));
-    --color-border-hover: var(--color-button-secondary-border-hover, var(--color-border)); }
+    --color-text-hover: var(--color-button-secondary-text-hover, #1C52AC);
+    --color-background-hover: var(--color-button-secondary-background-hover, #E7EEF6);
+    --color-border-hover: var(--color-button-secondary-border-hover, #1C52AC); }
   .button-theme_muted {
     --color-text: var(--color-button-muted-text, #fff);
     --color-background: var(--color-button-muted-background, #767676);
     --color-border: var(--color-button-muted-border, #767676);
     --color-text-hover: var(--color-button-muted-text-hover, var(--color-text));
-    --color-background-hover: var(--color-button-muted-background-hover, var(--color-background));
-    --color-border-hover: var(--color-button-muted-border-hover, var(--color-border)); }
+    --color-background-hover: var(--color-button-muted-background-hover, #818181);
+    --color-border-hover: var(--color-button-muted-border-hover, #818181); }
   .button-theme_callme {
     --color-text: var(--color-button-callme-text, #2363D1);
     --color-background: var(--color-button-callme-background, #fff);
@@ -3611,8 +3611,8 @@ body {
     --color-background: var(--color-button-cart-background, #2363D1);
     --color-border: var(--color-button-cart-border, #2363D1);
     --color-text-hover: var(--color-button-cart-text-hover, var(--color-text));
-    --color-background-hover: var(--color-button-cart-background-hover, var(--color-background));
-    --color-border-hover: var(--color-button-cart-border-hover, var(--color-border)); }
+    --color-background-hover: var(--color-button-cart-background-hover, #1C52AC);
+    --color-border-hover: var(--color-button-cart-border-hover, #1C52AC); }
 
 /* Slider */
 .slick-slider {
@@ -6052,5 +6052,3 @@ footer > .container {
   color: var(--color-footer-links, #c1c1c1); }
   .footer-content__column a:hover {
     color: var(--color-footer-links-hover, #fff); }
-
-/*# sourceMappingURL=maps/new.css.map */

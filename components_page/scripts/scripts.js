@@ -953,6 +953,3 @@ $('.acc__toggle:not(.not_toggle)').click(function(e) {
       $this.next().slideToggle(200);
   }
 });
-
-
-//# sourceMappingURL=maps/scripts.js.map

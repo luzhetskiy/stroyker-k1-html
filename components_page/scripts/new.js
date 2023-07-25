@@ -583,4 +583,3 @@ var SliderConstructor = /*#__PURE__*/function () {
 
   return SliderConstructor;
 }();
-//# sourceMappingURL=maps/new.js.map
