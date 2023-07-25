@@ -3483,69 +3483,6 @@ body {
   min-height: 0px;
   min-width: 0px; }
 
-.button {
-  outline: none;
-  background-color: transparent;
-  box-shadow: none;
-  border: 0;
-  appearance: none;
-  padding: 0;
-  border-radius: 0;
-  color: inherit;
-  font-weight: inherit;
-  font-family: inherit;
-  text-rendering: inherit;
-  line-height: inherit;
-  cursor: pointer;
-  position: relative;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: inline-flex;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 14px;
-  transition: color 0.15s ease-out, border-color 0.15s ease-out, background-color 0.15s ease-out, opacity 0.15s ease-out, visibility 0.15s ease-out;
-  height: 40px;
-  line-height: 38px;
-  padding: 0 15px;
-  border-radius: 2px;
-  min-width: 144px;
-  font-weight: 400; }
-  .button .icon {
-    height: 18px;
-    width: 18px; }
-  .button_style-1 {
-    border: 1px solid var(--main-elements-color, #2363D1);
-    background-color: var(--color-button1-bg, transparent);
-    color: var(--main-elements-color, #2363D1); }
-    .button_style-1[data-touch], .button_style-1[data-hover] {
-      background-color: #E7EEF6;
-      border-color: var(--main-elements-hover-color, #1C52AC); }
-  .button_style-2 {
-    border: 1px solid var(--main-elements-color, #2363D1);
-    background-color: var(--main-elements-color, #2363D1);
-    color: #fff; }
-    .button_style-2[data-touch], .button_style-2[data-hover] {
-      background-color: var(--main-elements-hover-color, #1C52AC);
-      border-color: var(--main-elements-hover-color, #1C52AC); }
-  .button_disabled {
-    border: 1px solid #767676;
-    color: #fff;
-    background-color: #767676; }
-    .button_disabled[data-touch], .button_disabled[data-hover] {
-      background-color: #818181; }
-  .button_xl {
-    line-height: 46px;
-    padding: 0 20px;
-    height: 48px;
-    font-size: 18px; }
-    .button_xl .icon {
-      height: 20px;
-      width: 20px; }
-
 .test-1 {
   outline: none;
   background-color: transparent;
