@@ -807,10 +807,10 @@
   }
 }
 .product-card-v2 .input-number,
+.product-item_max-heigth .input-number,
+.product-item_max-width .input-number,
 .product-item_new .input-number,
-.product-item_wide .input-number,
-.product_max-height .input-number,
-.product_max-width .input-number {
+.product-item_wide .input-number {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   border: 1px solid var(--color-button-secondary-border, #b7cbe5);
@@ -828,10 +828,10 @@
   width: 100%;
 }
 .product-card-v2 .input-number input[type="number"],
+.product-item_max-heigth .input-number input[type="number"],
+.product-item_max-width .input-number input[type="number"],
 .product-item_new .input-number input[type="number"],
-.product-item_wide .input-number input[type="number"],
-.product_max-height .input-number input[type="number"],
-.product_max-width .input-number input[type="number"] {
+.product-item_wide .input-number input[type="number"] {
   -webkit-appearance: none;
   border: none;
   color: var(--color-button-secondary-text);
@@ -845,6 +845,18 @@
 }
 .product-card-v2 .input-number input[type="number"]::-webkit-inner-spin-button,
 .product-card-v2 .input-number input[type="number"]::-webkit-outer-spin-button,
+.product-item_max-heigth
+  .input-number
+  input[type="number"]::-webkit-inner-spin-button,
+.product-item_max-heigth
+  .input-number
+  input[type="number"]::-webkit-outer-spin-button,
+.product-item_max-width
+  .input-number
+  input[type="number"]::-webkit-inner-spin-button,
+.product-item_max-width
+  .input-number
+  input[type="number"]::-webkit-outer-spin-button,
 .product-item_new .input-number input[type="number"]::-webkit-inner-spin-button,
 .product-item_new .input-number input[type="number"]::-webkit-outer-spin-button,
 .product-item_wide
@@ -852,32 +864,20 @@
   input[type="number"]::-webkit-inner-spin-button,
 .product-item_wide
   .input-number
-  input[type="number"]::-webkit-outer-spin-button,
-.product_max-height
-  .input-number
-  input[type="number"]::-webkit-inner-spin-button,
-.product_max-height
-  .input-number
-  input[type="number"]::-webkit-outer-spin-button,
-.product_max-width
-  .input-number
-  input[type="number"]::-webkit-inner-spin-button,
-.product_max-width
-  .input-number
   input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 .product-card-v2 .input-number .order-down,
 .product-card-v2 .input-number .order-up,
+.product-item_max-heigth .input-number .order-down,
+.product-item_max-heigth .input-number .order-up,
+.product-item_max-width .input-number .order-down,
+.product-item_max-width .input-number .order-up,
 .product-item_new .input-number .order-down,
 .product-item_new .input-number .order-up,
 .product-item_wide .input-number .order-down,
-.product-item_wide .input-number .order-up,
-.product_max-height .input-number .order-down,
-.product_max-height .input-number .order-up,
-.product_max-width .input-number .order-down,
-.product_max-width .input-number .order-up {
+.product-item_wide .input-number .order-up {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-box-pack: center;
@@ -894,52 +894,52 @@
 }
 .product-card-v2 .input-number .order-down:hover,
 .product-card-v2 .input-number .order-up:hover,
+.product-item_max-heigth .input-number .order-down:hover,
+.product-item_max-heigth .input-number .order-up:hover,
+.product-item_max-width .input-number .order-down:hover,
+.product-item_max-width .input-number .order-up:hover,
 .product-item_new .input-number .order-down:hover,
 .product-item_new .input-number .order-up:hover,
 .product-item_wide .input-number .order-down:hover,
-.product-item_wide .input-number .order-up:hover,
-.product_max-height .input-number .order-down:hover,
-.product_max-height .input-number .order-up:hover,
-.product_max-width .input-number .order-down:hover,
-.product_max-width .input-number .order-up:hover {
+.product-item_wide .input-number .order-up:hover {
   background: var(--color-button-secondary-background-hover, #e7eef6);
 }
 .product-card-v2 .input-number .order-down:before,
 .product-card-v2 .input-number .order-up:after,
 .product-card-v2 .input-number .order-up:before,
+.product-item_max-heigth .input-number .order-down:before,
+.product-item_max-heigth .input-number .order-up:after,
+.product-item_max-heigth .input-number .order-up:before,
+.product-item_max-width .input-number .order-down:before,
+.product-item_max-width .input-number .order-up:after,
+.product-item_max-width .input-number .order-up:before,
 .product-item_new .input-number .order-down:before,
 .product-item_new .input-number .order-up:after,
 .product-item_new .input-number .order-up:before,
 .product-item_wide .input-number .order-down:before,
 .product-item_wide .input-number .order-up:after,
-.product-item_wide .input-number .order-up:before,
-.product_max-height .input-number .order-down:before,
-.product_max-height .input-number .order-up:after,
-.product_max-height .input-number .order-up:before,
-.product_max-width .input-number .order-down:before,
-.product_max-width .input-number .order-up:after,
-.product_max-width .input-number .order-up:before {
+.product-item_wide .input-number .order-up:before {
   left: auto;
   top: auto;
 }
 .product-card-v2 .input-number .order-up:before,
+.product-item_max-heigth .input-number .order-up:before,
+.product-item_max-width .input-number .order-up:before,
 .product-item_new .input-number .order-up:before,
-.product-item_wide .input-number .order-up:before,
-.product_max-height .input-number .order-up:before,
-.product_max-width .input-number .order-up:before {
+.product-item_wide .input-number .order-up:before {
   height: 7px;
   width: 1px;
 }
 .product-card-v2 .input-number .order-down:before,
 .product-card-v2 .input-number .order-up:after,
+.product-item_max-heigth .input-number .order-down:before,
+.product-item_max-heigth .input-number .order-up:after,
+.product-item_max-width .input-number .order-down:before,
+.product-item_max-width .input-number .order-up:after,
 .product-item_new .input-number .order-down:before,
 .product-item_new .input-number .order-up:after,
 .product-item_wide .input-number .order-down:before,
-.product-item_wide .input-number .order-up:after,
-.product_max-height .input-number .order-down:before,
-.product_max-height .input-number .order-up:after,
-.product_max-width .input-number .order-down:before,
-.product_max-width .input-number .order-up:after {
+.product-item_wide .input-number .order-up:after {
   height: 1px;
   width: 7px;
 }
