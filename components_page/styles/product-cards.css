@@ -1,4 +1,4 @@
-.button {
+.st-button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-box-pack: center;
@@ -21,28 +21,28 @@
   white-space: break-spaces;
   width: auto;
 }
-.button:not(.button:has(.button__icon)) .button__title {
+.st-button:not(.st-button:has(.st-button__icon)) .st-button__title {
   margin-left: 0;
 }
-.button:not(.button:has(.button__icon)) .button__sub-title {
+.st-button:not(.st-button:has(.st-button__icon)) .st-button__sub-title {
   margin-left: 0;
 }
-.button__icon {
+.st-button__icon {
   fill: inherit;
 }
-.button__icon_cart {
+.st-button__icon_cart {
   height: auto;
   min-width: 22px;
 }
-.button__icon_favorite {
+.st-button__icon_favorite {
   height: auto;
   min-width: 20px;
 }
-.button__icon_comparison {
+.st-button__icon_comparison {
   height: auto;
   min-width: 17px;
 }
-.button__text {
+.st-button__text {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   display: -webkit-box;
@@ -52,23 +52,23 @@
   flex-direction: column;
   white-space: wrap;
 }
-.button__text,
-.button__title {
+.st-button__text,
+.st-button__title {
   color: inherit;
   font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.button__title {
+.st-button__title {
   font-weight: 400;
   line-height: 18px;
   margin-left: 7px;
   text-align: left;
 }
-.button__title:empty {
+.st-button__title:empty {
   margin-left: 0;
 }
-.button__sub-title {
+.st-button__sub-title {
   color: inherit;
   font-size: 10px;
   font-weight: 400;
@@ -77,19 +77,19 @@
   text-align: left;
   width: 100%;
 }
-.button__sub-title:empty {
+.st-button__sub-title:empty {
   margin-left: 0;
 }
-.button_add-to-cart .button__title {
+.st-button_add-to-cart .st-button__title {
   white-space: nowrap;
 }
-.button_primary {
+.st-button_primary {
   fill: var(--color-button-primary-text, #fff);
   background-color: var(--color-button-primary-background, #2363d1);
   border-color: var(--color-button-primary-border, #2363d1);
   color: var(--color-button-primary-text, #fff);
 }
-.button_primary:hover {
+.st-button_primary:hover {
   fill: var(
     --color-button-primary-text-hover,
     var(--color-button-primary-text, #fff)
@@ -101,25 +101,25 @@
     var(--color-button-primary-text, #fff)
   );
 }
-.button_secondary {
+.st-button_secondary {
   fill: var(--color-button-secondary-text, #2363d1);
   background-color: var(--color-button-secondary-background, #fff);
   border-color: var(--color-button-secondary-border, #b7cbe5);
   color: var(--color-button-secondary-text, #2363d1);
 }
-.button_secondary:hover {
+.st-button_secondary:hover {
   fill: var(--color-button-secondary-text-hover, #1c52ac);
   background-color: var(--color-button-secondary-background-hover, #e7eef6);
   border-color: var(--color-button-secondary-border-hover, #1c52ac);
   color: var(--color-button-secondary-text-hover, #1c52ac);
 }
-.button_muted {
+.st-button_muted {
   fill: var(--color-button-muted-text, #fff);
   background-color: var(--color-button-muted-background, #767676);
   border-color: var(--color-button-muted-border, #767676);
   color: var(--color-button-muted-text, #fff);
 }
-.button_muted:hover {
+.st-button_muted:hover {
   fill: var(
     --color-button-muted-text-hover,
     var(--color-button-muted-text, #fff)
@@ -132,18 +132,18 @@
   );
 }
 @media (max-width: 767px) {
-  .button,
-  .button__text,
-  .button__title {
+  .st-button,
+  .st-button__text,
+  .st-button__title {
     font-size: 12px;
   }
-  .button__sub-title {
+  .st-button__sub-title {
     font-size: 10px;
   }
-  .button__icon + .button__text {
+  .st-button__icon + .st-button__text {
     display: none;
   }
-  .button_comparison {
+  .st-button_comparison {
     display: none;
   }
 }
