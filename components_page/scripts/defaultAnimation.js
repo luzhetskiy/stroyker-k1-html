@@ -6,15 +6,20 @@ $(document).ready(function () {
     "data-aos-delay": "100", // задержка
     "data-aos-duration": "1000", // продолжительность
   });
-  
-  // анимация слайда
-  $(".slide-content").attr({
+  // анимация больших слайдов
+  $(".home-banner .owl-item").attr({
     "data-aos": "fade",
     "data-aos-delay": "100",
     "data-aos-duration": "1000",
   });
-  // анимация больших слайдов
-  $(".owl-item").attr({
+  // анимация слайдов новостей
+  $(".news_slider .owl-item").attr({
+    "data-aos": "fade",
+    "data-aos-delay": "100",
+    "data-aos-duration": "1000",
+  });
+  // анимация слайдов статей
+  $(".articles_slider .owl-item").attr({
     "data-aos": "fade",
     "data-aos-delay": "100",
     "data-aos-duration": "1000",
@@ -37,11 +42,28 @@ $(document).ready(function () {
     "data-aos-delay": "100",
     "data-aos-duration": "1000",
   });
+  // анимация блока с ответами на вопросы
+  $(".faq_frontpage_block").attr({
+    "data-aos": "fade",
+    "data-aos-delay": "100",
+    "data-aos-duration": "1000",
+  });
+  // анимация блока с формой телефона
+  $(".gift_for_phone_block").attr({
+    "data-aos": "fade",
+    "data-aos-delay": "100",
+    "data-aos-duration": "1000",
+  });
   // анимация формы в подвале
   $(".question-form").attr({
     "data-aos": "fade",
     "data-aos-delay": "100",
     "data-aos-duration": "1000",
+  });
+
+
+  AOS.init({
+    once: true,
   });
 
 });
