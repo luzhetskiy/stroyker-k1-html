@@ -15251,3 +15251,16 @@ canvas {
     background-color: var(--frontpage-first-screen-bg-color, #f5f5f5);
   }
 }
+
+.filepond--root .filepond--credits[style] {
+  display: none !important;
+}
+
+.filepond--item {
+  position: absolute !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  margin-bottom: inherit !important;
+  padding-left: inherit !important;
+}
