@@ -710,6 +710,8 @@
 .shopping-cart-product {
   gap: 7px;
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 .product-item__btns {
   -webkit-box-pack: start;
