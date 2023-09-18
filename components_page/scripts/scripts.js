@@ -780,7 +780,6 @@ $(function () {
   const buttonDefaultView = $('.button1')
   const buttonWideView = $('.button2')
   const buttonLineView = $('.button3')
-  const catalogGrid = $('.catalog-body .d-grid')
   const items = $('.product-item')
 
   buttonWideView.click(event => {
@@ -788,7 +787,6 @@ $(function () {
     buttonLineView.removeClass('current')
     $(event.currentTarget).addClass('current')
     localStorage.setItem('catalogGrid', 'wide')
-    catalogGrid.addClass('grid-wide')
     items.removeClass('product-item--line')
     items.addClass('product-item--wide')
   })
@@ -798,7 +796,6 @@ $(function () {
     buttonDefaultView.removeClass('current')
     $(event.currentTarget).addClass('current')
     localStorage.setItem('catalogGrid', 'wide')
-    catalogGrid.addClass('grid-wide')
     items.removeClass('product-item--wide')
     items.addClass('product-item--line')
   })
@@ -808,7 +805,6 @@ $(function () {
     buttonLineView.removeClass('current')
     $(event.currentTarget).addClass('current')
     localStorage.setItem('catalogGrid', 'default')
-    catalogGrid.removeClass('grid-wide')
     items.removeClass('product-item--wide')
     items.removeClass('product-item--line')
   })
