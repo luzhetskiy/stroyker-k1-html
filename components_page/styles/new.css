@@ -6052,3 +6052,9 @@ footer > .container {
   color: var(--color-footer-links, #c1c1c1); }
   .footer-content__column a:hover {
     color: var(--color-footer-links-hover, #fff); }
+
+
+    .grid-wide {
+      width: 100% !important;
+      grid-template-columns: repeat(1, 1fr) !important;
+    }

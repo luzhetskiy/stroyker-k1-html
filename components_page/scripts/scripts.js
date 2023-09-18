@@ -776,59 +776,43 @@ $(function () {
   $('.cscrlb-scrollable').cscrlb();
 }); // catalog
 
-var button1 = document.querySelector(".button1");
-var button2 = document.querySelector(".button2");
-var button3 = document.querySelector(".button3");
-var items = document.querySelectorAll(".product-item:not(.product-item--banner)");
-var tableHeader = document.querySelector(".product-items-header");
+(() => {
+  const buttonDefaultView = $('.button1')
+  const buttonWideView = $('.button2')
+  const buttonLineView = $('.button3')
+  const catalogGrid = $('.catalog-body .d-grid')
+  const items = $('.product-item')
 
-function setActiveButton(btn) {
-  [button1, button2, button3].forEach(function (b) {
-    if (b === btn) {
-      b.classList.add("current");
-    } else {
-      b.classList.remove("current");
-    }
-  });
-}
+  buttonWideView.click(event => {
+    buttonDefaultView.removeClass('current')
+    buttonLineView.removeClass('current')
+    $(event.currentTarget).addClass('current')
+    localStorage.setItem('catalogGrid', 'wide')
+    catalogGrid.addClass('grid-wide')
+    items.removeClass('product-item--line')
+    items.addClass('product-item--wide')
+  })
 
-function handleClickButton1() {
-  setActiveButton(this);
-  items.forEach(function (item) {
-    item.className = "product-item";
-  });
-  tableHeader.classList.remove("open");
-}
+  buttonLineView.click(event => {
+    buttonWideView.removeClass('current')
+    buttonDefaultView.removeClass('current')
+    $(event.currentTarget).addClass('current')
+    localStorage.setItem('catalogGrid', 'wide')
+    catalogGrid.addClass('grid-wide')
+    items.removeClass('product-item--wide')
+    items.addClass('product-item--line')
+  })
 
-function handleClickButton2() {
-  setActiveButton(this);
-  items.forEach(function (item) {
-    item.classList.add("product-item--wide");
-    item.classList.remove("product-item--line");
-  });
-  tableHeader.classList.remove("open");
-}
-
-function handleClickButton3() {
-  setActiveButton(this);
-  var itemsContainer = document.querySelectorAll(".catalog-body.catalog-body--wide");
-
-  if (itemsContainer.length) {
-    itemsContainer[0].classList.add("list-mode");
-  }
-
-  items.forEach(function (item) {
-    item.classList.add("product-item--line");
-    item.classList.remove("product-item--wide");
-  });
-  tableHeader.classList.add("open");
-}
-
-if (button1 && button2 && button3) {
-  button1.addEventListener("click", handleClickButton1);
-  button2.addEventListener("click", handleClickButton2);
-  button3.addEventListener("click", handleClickButton3);
-}
+  buttonDefaultView.click(event => {
+    buttonWideView.removeClass('current')
+    buttonLineView.removeClass('current')
+    $(event.currentTarget).addClass('current')
+    localStorage.setItem('catalogGrid', 'default')
+    catalogGrid.removeClass('grid-wide')
+    items.removeClass('product-item--wide')
+    items.removeClass('product-item--line')
+  })
+})()
 /* range slider */
 
 
