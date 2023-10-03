@@ -176,7 +176,6 @@ function header() {
     isThrottled = true;
     setTimeout(() => {
       check();
-      console.log("scroll");
       isThrottled = false;
     }, 100);
   });
