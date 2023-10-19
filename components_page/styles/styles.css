@@ -2091,7 +2091,7 @@ p:last-child {
   left: 0;
   width: 100%;
   /* background: #333333; */
-  padding: 60px 0;
+  padding: 40px 0;
   z-index: 999;
   display: none;
 }

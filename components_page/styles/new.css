@@ -8244,7 +8244,7 @@ main {
   }
 
   .__header {
-    display: block;
+    display: flex;
   }
 
   .fixed .__header {
