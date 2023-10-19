@@ -5320,7 +5320,6 @@ body {
 }
 @media (max-width: 575.98px) {
   .slider-constructor {
-    margin: 0 calc(var(--container-padding-x) * -1);
     padding: 0 var(--container-padding-x);
     overflow: hidden;
   }
