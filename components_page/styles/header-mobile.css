@@ -7,8 +7,9 @@
 }
 
 .header--mob {
-  background: #fff;
+  background: var(--header-top-bg-color, #fff);
   height: 60px;
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   position: fixed;
