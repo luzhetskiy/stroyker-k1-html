@@ -1,5 +1,9 @@
 /* ---------------- TRAPEZE */
 
+.__header.trapeze .catalog-btn {
+  z-index: 1;
+}
+
 /* custom-block */
 .__header.trapeze .custom-block {
   padding-left: 30px;
