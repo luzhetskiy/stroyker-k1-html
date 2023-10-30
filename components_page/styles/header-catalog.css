@@ -48,7 +48,7 @@
   transition: 0.2s;
 }
 
-.__header.catalog-box {
+.__header .catalog-box {
   margin-top: 18px;
 }
 
