@@ -405,7 +405,7 @@ section.feedback-form .form-control {
 }
 .inner-page section,
 .inner-page main {
-  background-color: var(--inner-page-bg, #fff) !important;
+  background-color: var(--inner-page-bg, #fff);
 }
 
 section.feedback-form .question-form {
